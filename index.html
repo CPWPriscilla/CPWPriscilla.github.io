@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Cost of Childbirth in HK</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon"
+            href="images/logos/favicon.png"/>
+        <!-- Font Awesome icons (free version)
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>-->
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--FontAwesome Icons-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="stylesheets/styles.css" rel="stylesheet" />
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <!--can put in body part too-->
+        <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+        <script src="https://cdn.amcharts.com/lib/4/themes/dataviz.js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+        <script src="https://www.amcharts.com/lib/4/geodata/continentsLow.js"></script>
+        <script src="https://www.amcharts.com/lib/4/plugins/bullets.js"></script>
+        <script src="javascripts/myTheme.js"></script>
+        <script src="javascripts/myTheme1.js"></script>
+        <script src="javascripts/myTheme2.js"></script>
+        <script src="javascripts/myTheme3.js"></script>
+        <script src="javascripts/ajaxpost().js"></script>
+        <script src="https://www.amcharts.com/lib/4/themes/kelly.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin = "anonymous" ></script>
+        <!--These are for bootstrap and these can be put in head part too-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+    
+        <script src="javascripts/makeAjaxCalls.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <!-- Countup -->
+        <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js"></script>
+    </head>
+    
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-fixed-top" id="mainNav"  style="position: absolute;">
+        <div class="container">
+            <script src="javascripts/navbarfunction.js"></script>
+            <a class="navbar-brand" href="https://datastory.hkbu.edu.hk/"></a>
+    </nav>
+
+    <div class="menu-container">
+        <div class="menu-button" id="menubutton">
+            Menu
+            <span class="fas fa-bars"></span>
+        </div>
+        <ul>
+            <a href="#situation"><li>Fertility Rate in HK</li></a>
+            <a href="#housing"><li>Housing Cost in Hong Kong</li></a>
+            <a href="#living"><li>Living Cost in Hong Kong</li></a>
+            <a href="#nonmoney"><li>Non-Money Cost</li></a>
+            <a href="#outsidehk"><li>Pro-Fertility Policies Around Asia</li></a>
+        </ul>
+    </div>
+    
+        <button onclick="topFunction()" id="gototop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+        <!-- Masthead-->
+        <header class="masthead" >
+            <div class="container" id="body" style="align-items:center; vertical-align:middle; padding-top: 8rem; height: 100vh">
+                <div class="text-center center-heading"  style="max-width: 80rem; margin: auto; height: 100v">
+                    <h2 class="masthead-heading1" valign="middle" style="position:relative;">
+                        The Lowest Birth Rate - <br>Costs Of Birth Giving In Hong Kong Discourage Couples In Absence Of Pro-Fertility Measures
+                    </h2>
+                    <div class="masthead-text" style="font-size: 18px; color: gray" style="position:relative;">By Cheung Pui Wu</div>
+                    <h4 class="section2text1" valign="middle" style="position:relative;">
+                        The problem of sub-replacement fertility in Hong Kong has been intensified by a variety of factors for years, most of them are leading to the same issue - High Cost.
+                    </h4>
+                </div>
+                <div id="scroll" class="demo" style="margin-top: 7rem; position:relative;">
+                    <a href="#situation"><span></span><b>Scroll</b></a>
+                </div>
+                <!--<a id="btt">Hello</a>-->
+            </div>
+
+        </header>
+
+        <!--Situation-->
+        <section class="page-section"  valign="middle" id="situation">
+            <div class="container" valign="middle" id="body">
+                <!--<div class="masthead-heading text-uppercase">Cost of Childbirth in HK</div>
+                -->
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
+                        Fertility Rate in Hong Kong</h2>
+                    <!--<h4 class="section2text" valign="middle">
+                        Considering the increasing future burden, the number of birth-giving keeps dropping.
+                    </h4>-->
+                    <h4 class="section2text" valign="middle">
+                        An ideal birth rate is vital to maintain the sustainability of one place. While in Hong Kong, the latest birth rate in 2021 is only 0.77 which is far from the 2.1 suggested by the replacement level fertility.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        According to statistics from the Census and Statistics Department and World Bank, the fertility rate in both Hong Kong and the whole world keeps hitting record lows. The local total fertility rate even dived to the latest 0.77 from 1.06 in 2019 and hence continuously lead to a dead cross population.
+                    </h4>
+                    <h4 class="section2text" valign="middle" style="margin-bottom: 1rem;">
+                        The rate of at least one child per woman had been steady before the recent steepest fall after 2019 that made Hong Kong fall far behind the level of maintaining population size.
+                    </h4>
+                    <h4 class="section2text" valign="middle" style="margin-bottom: 1rem;">
+                        Winning South Korea by merely 0.03, Hong Kong was the second place for World’s Lowest Fertility Rate in 2020, but the latest census one year afterwards showed that the local number was 0.04 less than South Korea, that Hong Kong may take over the first place.
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-9 col-12 col-md-12" id="birthrate1" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
+                    <table class="styled-table col-lg-3 col-md-10 reveal" style="margin-right:auto; margin-left:auto">
+                        <caption class="text-uppercase"><b>The Lowest Fertility Rate Among the World in 2020</b></caption>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Country/Region</th>
+                                <th>Birth Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>South Korea</td>
+                                <td>0.83</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>2</td>
+                                <td>Hong Kong</td>
+                                <td>0.88</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Puerto Rico</td>
+                                <td>0.90</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Singapore</td>
+                                <td>1.10</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Malta</td>
+                                <td>1.13</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3 class="reftext" style="margin-top:30px">Source: HKSAR, 2021; World Bank, 2020</h3>
+            
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h2 class="section2text" valign="middle" style="margin-top: 60px; margin-bottom: 20px;">
+                        <b><i>The Trough Of Hong Kong Kindergarten</i></b></h2>
+                    <h4 class="section2text" valign="middle">
+                        Affected by the declining newborn and enrolment number, 19 kindergartens have already reported their closure to the Education Bureau from September 2021 to August 2022 and at least one in 10 kindergartens will possibly shut down in the coming three years, a survey has found.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        According to the Hong Kong Federation of Education Workers, about 70 per cent of the kindergartens said the enrolment number this year decreased which fuelled the financial pressure amid the pandemic and emigration wave.
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-12" id="chartdivgthd" valign="middle"  style="height:400px; margin:auto"></div>
+                    <div class="col-lg-4 col-md-12" id="chartdivgtwd" valign="middle"  style="height:400px; margin:auto"></div>
+                    <div class="col-lg-4 col-md-12" id="chartdivgtcl" valign="middle"  style="height:400px; margin:auto"></div>
+                </div>
+                <h3 class="reftext" style="margin-top:60px; max-width: 60rem; margin-right: auto; margin-left: auto; margin-bottom: 0px; text-align:left">
+                    Each Half-day or Whole-day Kindergarten lost an average of 16 and nine K1 students this year respectively, figures responded by 235 kindergartens told.
+                </h3>
+                <h3 class="reftext">
+                    Source: Hong Kong Federation of Education Workers, 2022
+                </h3>
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        However, the birth giving slide was still gloomy amid the economic downturn and the pandemic, and the number would “definitely” not rebound shortly, Au Yeung Po-chun, the vice-chairwoman of the Hong Kong Women Development Association (HKWDA) said firmly.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The latest survey done by her association in 2022 showed that an all-time low of only 31 per cent of local people are willing to give birth, which fell from 44 per cent one year ago.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Multiple factors were usually considered before affirming the decision to be pregnant, but the above survey, which interviewed 1275 people, found 86.7 per cent of respondents agreed that the housing issue was currently the most influential major reason, and such reason had occupied one of the top three disincentives for years. Followed by time plus energy insufficiency and the financial burden of child-rearing, these two factors were discouraging for about 85.1 and 84.7 per cent of respondents.
+                    </h4>
+                </div>
+                <div id="HKMDAfactors" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
+                <h3 class="reftext" style="margin-top:30px">Source: Hong Kong Women Development Association, 2022</h3>
+            </div>
+        </section>
+
+        <!--Housing-->
+        <section class="page-section"  valign="middle" id="housing" style="background-color:#f7f7f7;">
+            <div class="container" valign="middle" id="body">
+                <!--<div class="masthead-heading text-uppercase">Cost of Childbirth in HK</div>
+                -->
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
+                        Housing Cost in Hong Kong
+                    </h2>
+                        <h4 class="section2text" valign="middle">
+                            For most Hongkongers, the decision on whether to give birth was probably based on the premise of living space sufficiency, while the dense population and land scarcity eroded the willingness to be pregnant.
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            Hong Kong, a piece of 1113.76 km2 of land which is crowded with more than seven million people, has been the most unaffordable housing market for 12 years, Demographia, a journal internet site from the US, said.
+                            <div class="portfolio-item" style="display: inline-block;">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" style="color: #df4e71;">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x" style="font-size: 2rem;"></i></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            According to the International Housing Affordability Study, a home in Hong Kong was severely unaffordable and it averagely took about 23 years for a household who did not spend any part of his/her income to purchase a unit.
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            There are two options for most Hongkongers to purchase homes: with or without financial support from their parents, but the latter one is nearly impossible due to the imbalance between income and housing price, the vice-chairwoman explained.
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            She explicitly pointed out that some married couples were “pathetically” forced to be separated when they could neither afford private housing nor be provided with a public flat and it was unlikely for them to give birth with such an obstacle.
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            Housing Shortage was the top priority of the latest policy address that the current Chief Executive John Lee Ka-chiu announced the ‘Light Public Housing Scheme’ to shorten the waiting time for public housing which currently took 5.6 years on average.
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            Centa-City Index (CCL), a local property price indicator, showed that the price has generally lifted after SARS in 2003 with small fluctuations and broke the base index 100 of 1997 in March 2012.
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            The total fertility rate in Hong Kong then started to drop to 1.13 in 2013 from 1.29 children per woman in 2012, the year of the dragon when people tend to give birth in due to traditional thinking.
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            The childbirth situation improved to more than 1.2 in 2014 and 2016 when the brief recessions of the property market took place in despite the overall rising trend of CCL.
+                        </h4>
+                        <h4 class="section2text" valign="middle">
+                            However, an economic downturn may also take place since the property market is not isolated from the whole economy, and Au Yeung said this situation will be miserable, especially for the grassroots.
+                        </h4>
+                </div>
+    
+                <div class="row">
+                    <div class="col-lg-10" id="chartdivccl" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
+                    <h3 class="reftext">Source: Centaline Property</h3>
+                    <div class="col-lg-10" id="birthrate2" valign="middle"  style="height:600px; margin-right: auto; margin-left: auto;"></div>
+                    <h3 class="reftext" style="margin-bottom: 5rem;">Source: Census and Statistics Department</h3>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle" style="margin-bottom: 2rem;">
+                        The cliché of “the more you pay, the more you will gain” did not apply well to the housing situation in Hong Kong. CCL jumped by more than 40 from 2016 to 2021 with an increase of only one square meter in the overall floor area of an accommodation per person, according to the 2021 Population Census.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Being two of the medical staff in Hong Kong, Leon Yeung and his wife Fiona spent around 3 years and recently purchased a larger unit with four rooms that achieved a milestone in their preparation before pregnancy.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        They had not come up with a concrete plan or schedule for giving birth even though there was an intention, everything was still not yet ready.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        This married couple had been living in a 400ft apartment with two rooms since their marriage in 2019, which did not fulfil their ideal requirement of providing separate areas for their future child and a foreign domestic helper.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “You may say that four to five people could also live in a 400-500ft flat in the past, but the past is in the past,” said Yeung.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        While the long-lasting shortage itself was not only dealing with domestic demand, investors from the mainland also contributed to the private property flipping and led to the escalation of price, especially before the implementation of the “Spicy Measures”.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The housing problem is also attributed to the over-estimated completion of residential units apart from the high demand. Late completions deferred the whole supply schedule and hence extend the housing waiting list.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The reality fell behind the estimated completions for private property, the number of actual completed units has reached the forecast three times only since 2011. The difference has accumulated to an amount of 18,996 units, 700 units more than the estimated completion in 2021, the report from the Rating and Valuation Department showed.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Looking into the latest government five-year plan, according to the latest annual report of Hong Kong Housing Authority, the progress achieved only 11.8 per cent and less than one in 10 Public Rental Housing/ Green Form Subsidised Home Ownership Scheme (PRH/GSH) units was completed in the first year.
+                    </h4>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-6" id="chartdivcompletions" valign="middle"  style="height:600px; margin:auto"></div>
+                    <div class="col-lg-6" id="chartdivgovbuilding" valign="middle"  style="height:600px; margin:auto"></div>
+                </div>
+                <h3 class="reftext" style="margin-top:10px; max-width: 60rem; margin-right: 0; margin-left: auto; text-align:right; font-size:12px">
+                    *PRH / GSH: Production of Public Rental Housing / Green Form Subsidised Home Ownership Scheme <br> SSFs: Subsidised Sale Flatss
+                </h3>
+                <h3 class="reftext" style="margin-top:50px; max-width: 60rem; margin-right: auto; margin-left: auto; text-align:left;">
+                    Source: Hong Kong Property Review, Rating and Valuation Department; Annual Report 2022/21, Hong Kong Housing Authority
+                
+                </h3>
+            </div>
+        </section>
+
+        <!--Living-->
+        <section class="page-section"  valign="middle" id="living">
+            <div class="container" valign="middle" id="body">
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
+                        Living Cost in Hong Kong
+                    </h2>
+                    <h4 class="section2text" valign="middle">
+                        Apart from housing cost, baby rearing cost was another challenging obstacle for Hongkongers. There was a concept among Hong Kong people that raising a single child would cost at least four million dollars and the number was only a vague expression of telling how expensive it is to bring up a new life here.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Hang Seng Bank, which promoted this concept through advertisement in 2006, released the latest finding after 16 years that parents need to spend a half more - about six million dollars on each child until his/her economic independence.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Still, the housing cost, which can be a considerable expense for married couples, did not count in the above estimation.
+                    </h4>
+                    <h4 class="section2text" valign="middle" style="margin-top: 2rem; margin-bottom: 3rem; font-size: 25px;">
+                        <b><i>What can you get from $6M in Hong Kong?</i></b>
+                        <br>
+                    </h4>
+                </div>
+
+                <!-- <div class="count_wrapper reveal" id="counterrow" style="margin-bottom: 4rem;">
+                    <div class="count_container">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <span class="count_value" data-val="166666">000000</span>
+                        <span class="count_text">Starbucks Latte (Tall)</span>
+                    </div>
+                
+                    <div class="count_container"> 
+                        <i class="fa-solid fa-mobile-button"></i>
+                        <span class="count_value" data-val="779">0000</span>
+                        <span class="count_text">iPhone 14 (128GB)</span>
+                    </div>
+            
+                    <div class="count_container">
+                        <i class="fa-solid fa-car"></i>
+                        <span class="count_value" data-val="11">00</span>
+                        <span class="count_text">Tesla Model Y</span>
+                    </div>
+            
+                    <div class="count_container">
+                        <i class="fa-solid fa-building"></i>
+                        <span class="count_value" data-val="1">0</span>
+                        <span class="count_text">Novoland 2-Rooms Unit</span>
+                    </div>
+                </div> -->
+                <div class="count_wrapper reveal"style="margin-bottom: 4rem;">
+                    <div class="count_container">
+                        <i class="fa-solid fa-mug-hot"></i>
+                        <span class="counter"
+                        style="color: var(--bs-gray-600);
+                        display: grid;
+                        place-items: center;
+                        font-weight: 600;
+                        font-size: 3em;
+                        font-family: Montserrat;">166666</span>
+                        <span class="count_text">Starbucks Latte (Tall)</span>
+                    </div>
+                
+                    <div class="count_container"> 
+                        <i class="fa-solid fa-mobile-button"></i>
+                        <span class="counter"                        
+                        style="color: var(--bs-gray-600);
+                        display: grid;
+                        place-items: center;
+                        font-weight: 600;
+                        font-size: 3em;
+                        font-family: Montserrat;">779</span>
+                        <span class="count_text">iPhone 14 (128GB)</span>
+                    </div>
+            
+                    <div class="count_container">
+                        <i class="fa-solid fa-car"></i>
+                        <span class="counter"
+                        style="color: var(--bs-gray-600);
+                        display: grid;
+                        place-items: center;
+                        font-weight: 600;
+                        font-size: 3em;
+                        font-family: Montserrat;">11</span>
+                        <span class="count_text">Tesla Model Y</span>
+                    </div>
+            
+                    <div class="count_container">
+                        <i class="fa-solid fa-building"></i>
+                        <span class="counter"
+                        style="color: var(--bs-gray-600);
+                        display: grid;
+                        place-items: center;
+                        font-weight: 600;
+                        font-size: 3em;
+                        font-family: Montserrat;">1</span>
+                        <span class="count_text">Novoland 2-Rooms Unit</span>
+                    </div>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        Hong Kong had been a growing economy for decades with constantly edging up Consumer Price Index (CPI) which indicated the inflation rate.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The growth was remarkable after the financial crisis in 2008 which hindered various economic activities. The CPI increased to the current number of 103.8 from 71.1 in September 2008, taking the period of October 2019 to September 2020 as the base.
+                    </h4>
+                </div>
+                    <div class="row">
+                        <div class="col-lg-12" id="chartdivcpi" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
+                        <h3 class="reftext">Source: Census and Statistics Department</h3>
+                    </div>
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        The general price of newspapers jumped more than 60 per cent to 10 dollars per volume from 6 dollars in the 2000s and interviewees coincidental raised that the meal price was obviously more expensive than before, a HK$20 lunch set was gone, nowadays, they usually needed to pay HK$50 – HK$60 for one lunch meal.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The rising general price level made it tough for young adults to be financially independent of their families, “if we hire a fresh university graduate, we can at most offer him/her HK$15,000 per month, but it is impossible for them to afford the living and they have no choice but to rely on their parents,” Au Yeung Po-chun said.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Apart from the daily expenses of adults, a budget for newborn essentials will be an instant charge, such as a crib, pram, milk powder and nappy, “these may seem small transactions, but the cost will be huge if you add them up,” said Yeung.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The more people earn did not equal the greater willingness people have to bear a newborn, the vice-chairlady told the reporter that the grassroots were more willing to have children than the middle class because they tend to pursue a lower standard of living and were less demanding on the way of bringing up children.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        While the middle class, on one hand, cannot be benefited from public housing, and they also desire better living on the other hand, so the combination of housing and living cost often drives them in a bind as well.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Gennie Leung, a married female who decided not to give birth, said she could spend money more freely than her friends who needed to allocate funds for their kids, “one of my friends has never travelled once she was married and gave birth,” she added, “the saved money can be spent somewhere else, such as luxury goods and another unit.”
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Although the Yeungs believed that the cost of raising a child varies in different families, they intended to be financially prepared for a new member in order to avoid any accidents or tragedies which mostly happened at the grassroots they saw in their working places.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The occupation of the Yeung couple can be categorised as Professionals which is one of the highest paying jobs in Hong Kong, according to the latest Quarterly Report on General Household Survey by the Census and Statistics Department. However, they both agreed that saving money was hard due to various expenditures.
+                    </h4>
+                </div>
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle" style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <b><i>The Impacts Of COVID-19</i></b>
+                        <br>
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Just like in other places, the local economic environment had been eclipsed due to the pandemic that two key industries - tourism and trading were particularly crippled.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Despite the unfavourable impacts brought by COVID, CPI rarely fell throughout the tough period. The steepest dive of 2.3 percentage points was recorded in July 2020 when the third wave began, but it was soon offset by the rises afterwards.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Apart from the disinflation, the unemployment rate was lifted amid the pandemic, it was often about double more than in 2019, and the rate even met another peak ever since SARS that 7.2 per cent of the labour force was jobless in early 2021 during the fourth wave.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Similarly, the number of underemployment population was way more after the outbreak, people, especially from the service and retailing industry, were furloughed and the underemployed number in 2020 even escalated four times to 5.3 from 1.0 in 2019.
+                    </h4>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12" id="chartdivcpiue" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
+                    <h3 class="reftext">Source: Census and Statistics Department</h3>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        Whether affordable to current daily expenses is only the level-1 to test one’s financial ability to raise a child. Suffering from the double whammy of the pandemic, there were extra burdens on the younger couples besides the amount of six million dollars if they want to plan for pregnancy.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Ordinary people were baffled, and tourism was completely “dead” that thousands of citizens were involved, Au Yeung described. People were forced to switch to industries which were barely damaged, such as delivery and grocery clerk, as a result, financial plus job stability then took the priority over planning to have a child.
+                    </h4>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!--Non-Money-->
+        <section class="page-section"  valign="middle" id="nonmoney" style="background-color:#f7f7f7;">
+            <div class="container" valign="middle" id="body">
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
+                        Non-Money Cost
+                    </h2>
+                    <h4 class="section2text" valign="middle">
+                        Marriage and childbearing for most of the women in Hong Kong were postponed until their 30s with an average of two years gap between the two big events, figures from Census and Statistics Department showed.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The latest median age of local women having the first birth increased to 32.6 from 32.3 years old while an article in 2002 from Social Forces, a social research journal, found that the most ideal age should be 30.5 which was even younger than the median age of females’ first marriage in Hong Kong.
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" id="1stmarchild" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
+                    <h3 class="reftext">Source: Census and Statistics Department</h3>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        Ever since the 21st century, more tricenarians than vicenarians had preferred to bear a child. Unlike the past when the traditional concept of “women need to take care of the family instead of working outside” was deep-rooted, the involvement in higher education and society of Hong Kong females kept improving. Men were no longer the only breadwinners.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The labour force participation rate of women after 25 years old steadily rose compared with the number twenty years ago with a median income of $16,500.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The participation in the labour market of early thirties females climbed to almost 80 per cent from 72.6 per cent in 2001.
+                    </h4>
+                </div>
+
+                <div class="row reveal">
+                    <div class="col-lg-12" id="LFparticipationrate" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
+                    <h3 class="reftext" style="max-width: 60rem; margin-right: auto; margin-left: auto; margin-bottom: 0px;text-align:left;">
+                        The participation in the labour market of early thirties females climbed to almost 80 per cent from 72.6 per cent in 2001.
+                    </h3>
+                    <h3 class="reftext">
+                        Source: Census and Statistics Department
+                    </h3>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        If a working lady plan to become pregnant, she will either need to strive for a balance between her job and being a parent; or sacrifice her career and switch to a full-time mum. However, no matter which path the lady will choose, at least part of her time will be forgone for the new birth.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Serving Hong Kong females for years, Au Yeung observed that many women would rather give up their promotion or career opportunities and take up more family responsibilities, and it was more likely for females instead of males to take personal leave when any emergency happened in their families.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Although there were sacrifices for both genders in raising children, women were assigned more roles than men, she then gave a list of characters that may be played by married females, such as wife, daughter-in-law, caretaker, employee, mother and role model for children. The demanding duties compel females to choose either families or work.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        One of the causes of the declining involvement of young female vicenarians in the labour market can be attributed to the increased enrollment rate in higher education that a typical Hong Kong university student graduates at around 22 years old.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The ratio of women to men over 15 years old attaining an academic degree level dropped to 1:0.983 from 1:1.09 in 2011 that less than one man received tertiary education per female after 10 years.
+                    </h4>
+                </div>
+
+                <div class="row reveal">
+                    <div class="col-lg-12 section2text" valign="middle" style="margin: auto; text-align:center; font-family: 'Montserrat'; color: #6c757d; font-weight: 600; font-size: 20px;">Ratio of Population Aged Above 15 with Academic Degree Level</div>
+                    <div class="col-lg-12" id="Fpost2nd" valign="middle"  style="float:left; height:200px; margin-right: 0px;"></div>
+                </div>
+                <div class="row reveal">
+                    <div class="col-lg-4" id="11Mpost2nd" valign="middle" style="float:left; height:250px; margin-top: auto; margin-bottom: auto; margin-right: 0px;"></div>
+                    <div class="col-lg-4 section2text" valign="middle" style="margin: auto; text-align:center; font-size: 25px;">After 10 Years</div>
+                    <div class="col-lg-4" id="21Mpost2nd" valign="middle" style="float:left; height:240px; margin-top: auto; margin-bottom: auto; margin-right: 0px;"></div>
+                    <h3 class="reftext">Source: Census and Statistics Department</h3>
+                    
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        The widening gap as time passed was shown by the figures from the Census and Statistics Department that the younger the age group was, the larger the divergence would be, especially when a quartile more females attained a degree than males in the group of twenties.
+                    </h4>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12" id="postedusexage" valign="middle" loading="lazy" style="height:400px; padding-right: 80px; padding-top: 30px; margin:auto"></div>
+                    <h3 class="reftext">Source: Census and Statistics Department</h3>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        Due to the late involvement in the labour market, Fiona Cheung said that giving birth before the ideal age was barely practical in reality because it took time to “get the job on track”. Yeung also added it was common that not everyone could find a suitable partner.
+                    </h4>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle" style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <b><i>Time Cost</i></b>
+                        <br>
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The long working hours in Hong Kong was criticised and the latest median hours of work was 44 hours per week and about 15 per cent of citizens need to work more than 12 hours per day if they follow the five-day work week arrangement.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        According to the 360 Global Well-Being Survey in 2022 done by an insurance company Cigna, heavy workload with 22 per cent of votes was the third most stressful issue and only 8 per cent of local people were not stressed. Moreover, the same survey showed that the Health & Well-being index in Hong Kong was the worst among Asia-Pacific markets, it only scored 56.1, 0.6 down from the previous year.
+                    </h4>
+                    <h4 class="section2text" valign="middle" style="margin-bottom: 50px">
+                        Similar results happened even when comparing with the whole world, this international financial centre was ranked 93rd over 100 cities for the best work- life balance. Also, 17.9per cent of full-time employees worked more than 48 hours per week in Hong Kong, right behind the top overworked city - Dubai, figures from a network security company KISI told.
+                    </h4>
+                </div>
+
+                <div class="row" style="margin-bottom: 50px">
+                    <div class="col-lg-6 col-12 col-md-12" id="stressor" valign="middle"  style="height:600px; padding-right: 80px;"></div>
+                
+                    <div class="panel-group col-lg-6 reveal" id="accordion">
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">1. Kisi - Cities with the Best Work-life Balance</a>
+                            </h4>
+                          </div>
+                          <div id="collapse1" data-parent="#accordion" class="panel-collapse collapse show">
+                            <div class="panel-body">
+                            <table class="styled-table" style="margin-right:auto; margin-left:auto; width: auto">
+                                <caption class="text-uppercase" style="text-align: center;"><b>Ranking for Work-Life Balance</b></caption>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>City</th>
+                                        <th>Score</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Oslo</td>
+                                        <td>100</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>...</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>92</td>
+                                        <td>Memphis</td>
+                                        <td>77.12</td>
+                                    </tr>
+                                    <tr class="active-row">
+                                        <td>93</td>
+                                        <td>Hong Kong</td>
+                                        <td>77.11</td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td>...</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>100</td>
+                                        <td>Cape Town</td>
+                                        <td>50</td>
+                                    </tr>
+                                </tbody>
+                                <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Table source: Cities with the Best Work-Life Balance, Kisi, 2022</caption>
+                            </table>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2. Kisi - Overworked Cities</a>
+                            </h4>
+                          </div>
+                            <div id="collapse2" data-parent="#accordion" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <table class="styled-table" style="margin-right:auto; margin-left:auto;  width: auto">
+                                    <caption class="text-uppercase" style="text-align: center;"><b>Top Overworked Cities</b></caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>City</th>
+                                            <th>Overworked Population</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Dubai</td>
+                                            <td>23.4%</td>
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>2</td>
+                                            <td>Hong Kong</td>
+                                            <td>17.9%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Kuala Lumpur</td>
+                                            <td>17.1%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Singapore</td>
+                                            <td>16.9%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Montevideo</td>
+                                            <td>16.3%</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>...</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>100</td>
+                                            <td>Amsterdam</td>
+                                            <td>8.6%</td>
+                                        </tr>
+                                    </tbody>
+                                    <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Table source: Cities with the Best Work-Life Balance, Kisi, 2022</caption>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">3. Cigna - Health & Well-being Index</a>
+                            </h4>
+                          </div>
+                          <div id="collapse3" data-parent="#accordion" class="panel-collapse collapse in">
+                            <div class="panel-body">
+
+                                <table class="styled-table" style="margin-right:auto; margin-left:auto">
+                                    <caption class="text-uppercase" style="text-align: center;"><b>Health & Well-being Index 2022</b></caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Rank</th>
+                                            <th>Market</th>
+                                            <th>Index</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>APAC</td>
+                                            <td>63.6 (-0.3)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>India</td>
+                                            <td>72.1 (-1.5)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Mainland China</td>
+                                            <td>66.6 (+0.5)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Singapore</td>
+                                            <td>59.8 (+0.6)</td>
+                                        </tr>
+                                        <tr class="active-row">
+                                            <td>4</td>
+                                            <td>Hong Kong</td>
+                                            <td>56.1 (-0.6)</td>
+                                        </tr>
+                                    </tbody>
+                                    <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Table source: 360 Global Well-Being Survey, Cigna, 2022</caption>
+                                </table>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        Lack of time and energy was one of Leung’s biggest concerns that made her husband and she gave up, she could not even handle a pet, not to mention a baby. However, either being a full-time housewife or hiring a domestic helper was not a wise choice for her.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “The time I can spend at home isn’t long which means the time I can take care of my child isn’t long as well. And I do not want to miss a lot of first times of him/her,” she said.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Leung was not an exception, Au Yeung added that long working time would deprive parents of time to look after and create memories with their kids and that made childbearing totally meaningless.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        As a surveyor, Leung has been dealing with huge pressure under an intensive working environment where everything is pressing and rushed. Before moving to her current company, she used to work overtime frequently and literally lose her personal time, considering the travelling time already took her three hours every day.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “That period was quite sad. The situation lasted for six months that I needed to work until early in the morning and start work again at around 9 am” she recalled the tough time before she quit.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Leaving the labour market and focusing on housework can be an option but families like the Yeungs will prefer to keep their jobs until retirement because the cost of forgoing a position can be considerable and make them strapped especially when there is no gap between the incomes of two people.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        There is a traditional thinking - rearing children to 100 years old concerns parents for 99 years which means taking care of the young is a life-long duty, the additional pressure discourages adults to take up the responsibility, instead, they are eager for freedom of enjoying life that 56.1 per cent of interviewees in the HKWDA survey agreed with.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “It (Bearing a child) is just like an abyss without destination,” said Leung. And she was told by a parent of three children “Don’t give birth.”
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Apart from the financial support parents may need to offer to help start a home, Gennie Leung particularly pointed out the extra efforts on children’s studies.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Playgroup or preschool education has been popular in recent years. By observing the packed schedules of others’ toddlers, Leung can imagine the mental burden and unhappiness if her child was born while choices are limited in such a competitive environment.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The Yeungs also planned to apply preschool education for their future child so as to avoid losing at the starting line and being disadvantaged because they believe it was helpful for improving the communication ability and performance of their child in interviews.
+                    </h4>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle" style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <b><i>The Daunting Pandemic</i></b>
+                        <br>
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Besides the costs on normal days, the impacts of the pandemic create disincentives for fertility. The Family Planning Association of Hong Kong (FPAHK) specifically attribute the recent plunge in the birth rate to the pandemic since infected pregnant females were at higher risk of suffering from threatening complications. According to the survey from HKWDA, the seriousness of COVID development was indeed an influential factor for more than 70 per cent of respondents.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Married since 2017, Rex Yu and his wife had been neutral towards childbirth due to their growing background. But COVID reduced his negligible willingness. Working as a college lecturer, Yu said he had been exhausted for a long time since 2019. He needs to adapt to the new teaching mode and handle the extra workload brought by the pandemic. The tiredness often made him unconsciously flake out on the sofa from 9 pm to 2 am, but he then could not fall asleep again.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The resumption of many couples’ postponed pregnancy plans all depends on the development of the disease, Au Yeung Po-chun told the reporter, and the Yeungs were one of them.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “Uncertainty” of the virus plus the vaccine and extra workload were other major concerns for them besides the living space. “Even if we were rich enough and hold an apartment worth millions, it would be unlikely for us to give birth at that time,” Yeung said.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        At the beginning of the pandemic, unfriendly curbs for expectant couples at public hospitals were once implemented and no companions were allowed to enter the delivery room. While a negative nucleic acid test result within 48 hours before the visit is required for a partner, referring to the latest guideline.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        No one dared to guarantee when will the pandemic end, but countries were starting to relax anti-epidemic measures and get back to normal. And the worries about COVID from the Yeungs faded away gradually due to the comeback of many large social events.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Even they are still not mentally prepared for a new member, they tried to plan more in hopes of getting rid of foreseen difficulties and they were confident to push themselves beyond limits when necessary.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “In the past, you would imagine how could you become a pharmacist, how could you work the night shift alone, but these abilities were then forced to have, you only fulfilled your duty,” they explained.
+                    </h4>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle" style="margin-top: 2rem; margin-bottom: 2rem;">
+                        <b><i>Political Circumstances</i></b>
+                        <br>
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Ever since the social movement in 2019 and the establishment of Hong Kong national security law, an emigration wave broke out and more than 113,000 residents left Hong Kong was recorded.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Satisfaction towards the government used to slump to negative 62 per cent in late 2019 and rebounded to negative one per cent in late 2022, according to Hong Kong Public Opinion Research Institute.
+                    </h4>
+                </div>
+                
+                <div class="row">
+                    <div class="col-lg-12" id="govperformance" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
+                    <h3 class="reftext">Source: Hong Kong Public Opinion Research Institute</h3>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        Although Au Yeung observed that politics was not an influential factor for birth giving, netizens on – lihkg, a popular online forum for younger generations and pro-democratic camp, tended to attribute the low fertility rate to “brainwashing” patriotic education and the ruling of the government. While in another forum mostly used by parents – Baby Kingdom, the financial cost was discussed by most of the platform users.
+                    </h4>
+                </div>
+
+                <div class="slideshow-title reveal">A Post on Lihkg:</div>
+
+                <div class="slideshow-container reveal" style="max-width: 800px;padding-top:10px;padding-bottom:40px;">
+                    <div class="mySlides1">
+                        <img src="images/lihkg1.png" style="width:100%">
+                        <div style="padding-top:15px;">
+                            Regarding the topic of Hong Kong having the worst birth rate in the world, one comment got 1224 likes even more than the post itself, criticised the education system as “brainwashing”.
+                        </div>
+                    </div>
+
+                    <div class="mySlides1">
+                        <img src="images/lihkg2.png" style="width:100%">
+                        <div style="padding-top:15px;">
+                            Another netizen commented on the economic problems and political factors and got 122 likes.
+                        </div>
+                    </div>
+
+                    <!--<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>-->
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                </div>
+
+                <div class="slideshow-title reveal">A Post on Baby Kingdom:</div>
+
+                <div class="slideshow-container reveal" style="max-width: 800px;padding-top:10px;">
+                    <div class="mySlides2">
+                        <img src="images/babykingdom1.png" style="width:100%">
+                        <div style="padding-top:15px;">
+                            Regarding the topic of the estimated declining birth rate, one comment mentioned housing, education, and time issues.
+                        </div>
+                    </div>
+
+                    <div class="mySlides2">
+                        <img src="images/babykingdom2.png" style="width:100%">
+                        <div style="padding-top:15px;">
+                            “Don’t give birth if you are poor,” another comment said and pointed out the tense competition of the local children.
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!--Outside HK-->
+        <section class="page-section"  valign="middle" id="outsidehk">
+            <div class="container" valign="middle" id="body">
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
+                        Pro-Fertility Policies Around Asia
+                    </h2>
+                    <h4 class="section2text" valign="middle">
+                        Voices urging the government to improve or amend pro-natalist policies over the past years. According to the Findings on Family Planning Knowledge, Attitude and Practice in Hong Kong Survey 2017 from FPAHK, about half of the survey participants thought financial support, relative workplace arrangements and increases in child care services were helpful in encouraging fertility willingness. In particular, educational and housing subsidies, picked by 56.6 and 55.3 per cent of respondents, were the top two measures five years ago.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Similar reflection also appeared in the survey from HKWDA this year, winning the top two places again, child care plus educational subsidies and a priority scheme for public housing were chosen by 67.1 and 53 per cent of interviewees, data might imply that the views from locals did not change.
+                    </h4>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6" id="hkwdapolicy" valign="middle" loading="lazy" style="height:500px;"></div>
+                    <div class="col-lg-6" id="fpahkpolicy" valign="middle" loading="lazy" style="height:500px;"></div>
+                    <h3 class="reftext" style="padding-top: 30px">Source: HKWDA (2022); FPAHK (2017)</h3>
+                </div>
+
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        New People’s Party suggested to the Chief Executive before his first policy address that new parents should be awarded a cash bonus of HK$20,000.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “This for sure cannot make up the childbearing cost but can be regarded as a red pocket to encourage those families,” Regina Ip Lau Suk-yee, the party leader said in the press release.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        While Emil Ng, the council member of FPAHK, tended to dismiss the financial incentives because rewarding schemes in other places were ineffective, and the fundamental solution should rather be promoting the “happiness” of building a family.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “Exaggeratedly speaking, if people are awarded a unit after marriage, everyone will go for it, they will be keen on getting married even without happiness, even without an ideal partner,” he said on RTHK City Forum last year. “If the family is not happy, the children will only be harmful to society, there will be an additional burden in society.”
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Agreeing on providing more practical encouragement, Au Yeung stressed that Hong Kong has been behind others in terms of related assistance and the point was never on the amount, but the “sincerity” of the government in supporting local couples should matter.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        HKWDA also suggested different measures to the government after every review, for example, five-day work weeks or flexible working hours, and child care service enhancement, but responses from authorities were not good and Au Yeung described that officials would usually brush over their suggestions.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The shortage of child care facilities reached an alarming stage that raised officials’ attention especially when the child abuse scandal at Children’s Residential Homes was revealed this year. There will be a new resident child care centre established and the Secretary for Labour and Welfare Law Chi-kwong invites more operators to take part in related services in hopes of tackling the excess demand.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Compared with similar Asian regions/countries nearby, Hong Kong has the shortest paternity leave and is the only place where no cash bonus can be found. At least one baby per female was recorded in Singapore which is regarded as a keen competitor of Hong Kong and famous for her generous pro-natalist policies. But the number was less than one in Taiwan and South Korea, another two places that introduced certain policies.
+                    </h4>
+                </div>
+
+                <div class="row" style="margin-top: 50px">
+                    <div class="col-lg-8" id="asiamap" valign="middle" style="min-height:500px"></div>
+                    <div class="panel-group col-lg-4 reveal" id="accordion2">
+                        <div style="text-align:right; font-size:18px; color:#6c757d; padding-bottom: 10px;">
+                            <b>Highlights of Current Childcare Policies in Different Countries / Regions (First Birth)</b>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapse4">Hong Kong</a>
+                                </h4>
+                            </div>
+                            <div id="collapse4" data-parent="#accordion2" class="panel-collapse collapse show">
+                                <div class="panel-body">
+                                    <h4 class="section2text" valign="middle" style="font-size: 17px">
+                                        <b>- 14 Weeks Paid Maternity Leave </b><br>
+                                          (Four-fifths of Wages) <br>
+                                        <b>- 5 Days Paid Paternity Leave</b>
+                                        (Four-fifths of Wages, 100% for civil servants)<br>
+                                        <b>- Child Tax Allowance: <br></b>
+                                        HK$120,000 per year + HK$120,000 (one-off on year of birth) <br>
+                                        <b>- Student Grant for Kindergarten, Primary and Secondary Student: </b><br>
+                                        HK$2,500 per year <br>
+                                        <b>- Other Indirect of Means-tested Subsidies</b>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion2" href="#collapse5">Mainland China</a>
+                            </h4>
+                            </div>
+                            <div id="collapse5" data-parent="#accordion2" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    <h4 class="section2text" valign="middle" style="font-size: 17px">
+                                       <b>-	About 22 Weeks Full Paid Maternity Leave in most of the regions</b><br>
+                                       <b>-	7-30 Days Paid Paternity Leave</b><br>
+                                       <b>- New National Guidelines to Boost Fertility Rate</b><br>
+                                       The measures addressed housing, economic and social welfare issues to provide a better parent-friendly environment.<br>
+                                       <b></b><br>
+                                       <b></b><br>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapse6">Taiwan</a>
+                                </h4>
+                            </div>
+                            <div id="collapse6" data-parent="#accordion2" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h4 class="section2text" valign="middle" style="font-size: 17px">
+                                        <b>- 12 Weeks Full Paid Maternity Leave</b><br>
+                                        <b>- 1 Week Full Paid Paternity Leave</b><br>
+                                        <b>- Child-rearing Allowances: </b><br>
+                                        NT$5,000 (HK$1,250)<br>
+                                        <b>- Child Care Subsidies attending public care centers:</b><br>
+                                        NT$5500 – NT$9,500 (HK$1,375 – HK$2,375)<br>
+                                        <b>- Child Care Subsidies attending quasi-public care centers:</b><br>
+                                        NT$8,500 – NT$12,500 (HK$2,125 – HK$3,125)<br>
+                                        <b>- Preschools Fee:</b><br>
+                                        NT$1,000 – NT$3,000 (HK$250 - HK$750)*<br>
+                                        (Free for low-income and middle-low-income households)<br>
+                                        <b>- Baby Bonus Provided in Some Places:</b>
+                                        NT$10,000 – NT$30,000 (HK$2,500 - HK$7,500)<br>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapse7">Japan</a>
+                                </h4>
+                            </div>
+                            <div id="collapse7" data-parent="#accordion2" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h4 class="section2text" valign="middle" style="font-size: 17px">
+                                        <b>- 14 Weeks Paid Maternity Leave</b><br>
+                                        (Two-thirds of Wages)<br>
+                                        <b>- 4 Weeks Paternity Leave</b><br>
+                                        <b>- 14 Months Childcare Leave</b><br>
+                                        <b>- Childbirth and Childcare Lump Sum:</b><br>
+                                        ¥408,000 - ¥420,000 (HK$24,480 - HK$25,200)<br>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapse8">South Korea</a>
+                                </h4>
+                            </div>
+                            <div id="collapse8" data-parent="#accordion2" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h4 class="section2text" valign="middle" style="font-size: 17px">
+                                        <b>- 90 Days Full Paid Maternity Leave</b><br>
+                                        <b>- 10 Days Full Paid Paternity Leave</b><br>
+                                        <b>- One Year Paid Parental Leave</b><br>
+                                        <b>- Cash Bonus:</b><br>
+                                        ₩2,000,000 (HK$14,000)<br>
+                                        <b>- Congratulatory Allowance:</b><br>
+                                        ₩1,000,000 (HK$7,000)<br>
+                                        <b>- Monthly Allowance until 1 year old:</b><br>
+                                        ₩300,000 (HK$2,100)
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion2" href="#collapse9">Singapore</a>
+                                </h4>
+                            </div>
+                            <div id="collapse9" data-parent="#accordion2" class="panel-collapse collapse in">
+                                <div class="panel-body">
+                                    <h4 class="section2text" valign="middle" style="font-size: 17px">
+                                        <b>-	16 Weeks Full Paid Maternity Leave</b><br>
+                                        <b>-	2 Weeks Full Paid Paternity Leave</b><br>
+                                        <b>-	6 Days per year Paid Childcare Leave until the child reaches 7 years old</b><br>
+                                        <b>-	Baby Bonus Cash Gift:</b><br>
+                                        S$8,000 (HK$48,000)<br>
+                                        <b>-	Baby Support Grant:</b><br>
+                                        S$6,000 (HK$36,000)<br>
+                                        <b>-	Monthly Levy Concession for a foreign domestic helper:</b><br>
+                                        S$60 (HK$360)<br>
+                                        <b>-	Parenthood Tax Rebate:</b><br>
+                                        S$5,000 (HK$30,000)<br>
+                                        <b>-	Subsidies for Preschool:</b><br>
+                                        S$600 - S$1310 (HK$3,600 - HK$7,860)<br>
+                                        <b>-	Parenthood Priority Scheme:</b><br>
+                                        Part of the public housing units are allocated to parents
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <h3 class="reftext" style="margin-top:10px; max-width: 60rem; margin-left: 0; margin-right: auto; text-align:left; font-size:12px">
+                    Source: Official Government Data; World Population Prospects, United Nations, 2022
+                </h3>
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                    <h4 class="section2text" valign="middle">
+                        The latest comprehensive review of Population Policy was traced back to seven years ago when Carrie Lam Cheng Yuet-ngor was still the Chief Secretary for Administration.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The report in 2015 said the declining fertility in Hong Kong was not as pressing as other livelihood issues were and “the public may not agree to spend substantial resources on measures to raise fertility.”
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Au Yeung criticised the above statement as “nonsense”, she believed that population policy was crucial, and the next generation would be the key to maintaining sustainability.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “Children will be the pillars of society which we will rely on, what will the future be if we do not treat them well, it is actually the responsibility of the government,” the vice chairwoman of HKWDA said.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        The view of “Excessive government intervention may not be appropriate” mentioned in the official report, was once again repeated by the leading figure of Hong Kong – John Lee Ka-chiu in 2021, the year when the total birth rate dropped to less than one.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Instead of considering direct cash subsidy as effective in the local environment, there were amendments to the family-friendly measures after the report, such as the extension of maternity plus paternity leave and adjustment on child tax allowance.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Although FPAHK commented that there were definite positive effects thanks to the extension of leaves, such improvements cannot be found in the fertility rate trend. Moreover, the efforts spent on building a family-friendly environment in hopes of encouraging birth giving had been too inconsiderable or nugatory to create incentives for couples.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Au Yeung said the government was just all mouth and no trousers that she could not see a family-friendly environment was truly developed, inadequacy of child care services and late support towards breastfeeding should not happen in this metropolis.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        “As a local, we definitely hope to have more future generations,” she added. “If we lack local manpower, we then have to rely on the imported labours from mainland China.”
+                    </h4>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer py-4" id="footer" style="position: relative;margin-bottom:20px">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 text-lg-start">Copyright &copy; Cheung Pui Wu</div>
+                    <!--<div class="col-lg-4 my-3 my-lg-0">
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    </div>-->
+                </div>
+            </div>
+        </footer>
+
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog" >
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="images/close-icon.svg" alt="Close modal" />
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <table class="styled-table" style="margin-right:auto; margin-left:auto; width: 350px;">
+                                <caption class="text-uppercase"><b>The Least Affortable Housing Market</b></caption>
+                                <thead>
+                                    <tr>
+                                        <th>Rank</th>
+                                        <th>Market</th>
+                                        <th>Median Multiple</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active-row">
+                                        <td>1</td>
+                                        <td>Hong Kong</td>
+                                        <td>23.2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Sydney</td>
+                                        <td>15.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Vancouver</td>
+                                        <td>13.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>San Jose</td>
+                                        <td>12.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Melbourne</td>
+                                        <td>12.1</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h3 class="reftext" style="margin-top:30px; position: relative;">Table source: International Housing Affordability, Demographia, 2022</h3>
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--JS-->
+        <script src="/makeAjaxCalls.js"></script>
+        <script src="javascripts/surveychart.js"></script>
+        <script src="javascripts/backtotop.js"></script>
+        <script src="javascripts/slideshow.js"></script>
+        <script src="javascripts/menu.js"></script>
+        <script src="javascripts/scrollanimation.js"></script>
+        <!--Situation JS-->
+        <script src="javascripts/situation/birthrate1.js"></script>
+        <script src="javascripts/situation/kindergarten(HD).js"></script>
+        <script src="javascripts/situation/kindergarten(WD).js"></script>
+        <script src="javascripts/situation/kindergarten(PS).js"></script>
+        <script src="javascripts/situation/kindergarten(CL).js"></script>
+        <script src="javascripts/situation/HKMDAfactors.js"></script>
+        <!--Housing JS-->
+        <script src="javascripts/housing/birthrate2.js"></script>
+        <script src="javascripts/housing/CCL.js"></script>
+        <script src="javascripts/housing/Completions.js"></script>
+        <script src="javascripts/housing/Govbuilding.js"></script>
+        <!--Living JS-->
+        <script src="javascripts/living/Unemployment.js"></script>
+        <script src="javascripts/living/CPI.js"></script>
+        <script src="javascripts/living/CPI&UE.js"></script>
+        <script src="javascripts/living/countup2.js"></script>
+        <!--Non Money JS-->
+        <script src="javascripts/non-money/1stmarchild.js"></script>
+        <script src="javascripts/non-money/Age specific fertility rates.js"></script>
+        <script src="javascripts/non-money/femalepost2nd.js"></script>
+        <script src="javascripts/non-money/2011malepost2nd.js"></script>
+        <script src="javascripts/non-money/2021malepost2nd.js"></script>
+        <script src="javascripts/non-money/postedusexage.js"></script>
+        <script src="javascripts/non-money/psyimpact1.js"></script>
+        <script src="javascripts/non-money/psyimpact2.js"></script>
+        <script src="javascripts/non-money/LFparticipationrate.js"></script>
+        <script src="javascripts/non-money/stressor.js"></script>
+        <script src="javascripts/non-money/GovPerformance.js"></script>
+        <!--Outside HK JS-->
+        <script src="javascripts/outsideHK/asiamap.js"></script>
+        <script src="javascripts/outsideHK/test.js"></script>
+        <script src="javascripts/outsideHK/HKWDApolicy.js"></script>
+        <script src="javascripts/outsideHK/FPAHKpolicy.js"></script>
+
+        <script type="text/javascript"
+            src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="javascripts/scripts.js"></script>
+
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            let click = document.querySelector('.click');
+            let list = document.querySelector('.list');
+            click.addEventListener("click",()=>{
+                list.classList.toggle('newlist');
+            });        
+        </script>
+</body>
+
+</html>

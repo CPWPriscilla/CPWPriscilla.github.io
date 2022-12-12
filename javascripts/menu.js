@@ -1,0 +1,16 @@
+$(document).ready(function(){
+    $('.menu-button').click(function(){
+      if($(this).hasClass('expand')){
+        $('ul').slideUp(function(){
+          $('.menu-button').removeClass('expand');
+          $('.fa-bars').removeClass('expand');
+        });
+      }else{
+        $(this).addClass('expand');
+        setTimeout(function(){
+          $('.fa-bars').addClass('expand');
+          $('ul').stop().slideDown();
+        },200);
+      }
+    });
+});
