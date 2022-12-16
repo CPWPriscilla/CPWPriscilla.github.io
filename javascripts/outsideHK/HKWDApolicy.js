@@ -8,6 +8,7 @@ am4core.ready(function() {
     // Themes end
 
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
     
     // Create chart instance
     var chart = am4core.create("hkwdapolicy", am4charts.XYChart);
@@ -16,22 +17,27 @@ am4core.ready(function() {
     chart.data = [{
       "category": "Child Care Subsidy/ Education Subsidy",
       "value": 67.1,
+      "votes": 855,
       "color": "#ffffff",
     }, {
       "category": "Priority Scheme for Public Housing",
       "value": 53,
+      "votes": 676,
       "color": "#ffffff",
     }, {
       "category": "Sufficient Child Care Facilities",
       "value": 41.2,
+      "votes": 525,
       "color": "#ffffff",
     }, {
       "category": "Family-Friendly Measures",
       "value": 37.1,
+      "votes": 473,
       "color": "#ffffff",
     }, {
       "category": "Standard Working Hours",
       "value": 15.7,
+      "votes": 200,
       "color": "#000000",
     }];
     
@@ -65,7 +71,7 @@ am4core.ready(function() {
     series.sequencedInterpolation = true;
     series.dataFields.valueY = "value";
     series.dataFields.categoryX = "category";
-    series.tooltipText = "{categoryX}: [bold font-size: 20]{valueY}%";
+    series.tooltipText = "{categoryX}:\n[bold font-size: 20]{votes} Votes ({valueY}%)";
     series.columns.template.strokeWidth = 0;
     
     series.tooltip.pointerOrientation = "vertical";

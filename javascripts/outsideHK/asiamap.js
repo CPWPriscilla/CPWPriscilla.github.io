@@ -5,6 +5,7 @@ am4core.ready(function() {
     // Themes end
 
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
     
     // Create map instance
     var chart = am4core.create("asiamap", am4maps.MapChart);

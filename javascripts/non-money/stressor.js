@@ -7,6 +7,7 @@ am4core.ready(function() {
     // Themes end
 
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
     
     // Create chart instance
     var chart = am4core.create("stressor", am4charts.PieChart);
@@ -33,12 +34,14 @@ am4core.ready(function() {
       ];
     
     pieSeries.alignLabels = false;
-    pieSeries.labels.template.bent = true;
-    pieSeries.labels.template.radius = 3;
+    pieSeries.labels.template.bent = false;
+    pieSeries.labels.template.radius = am4core.percent(-30);
     pieSeries.labels.template.padding(0,0,0,0);
-    pieSeries.labels.template.text = "{category}";
+    pieSeries.labels.template.text = "{category}:\n[bold font-size: 20]{value.percent}%";
+    pieSeries.labels.template.propertyFields.fill = "text_color";
+    pieSeries.labels.template.textAlign = 'middle';
 
-    pieSeries.slices.template.tooltipText = "{category}: {value.percent}%";
+    pieSeries.slices.template.tooltipText = "{category}:\n[bold font-size: 20]{value.percent}%";
     
     pieSeries.ticks.template.disabled = true;
 
@@ -83,17 +86,21 @@ am4core.ready(function() {
     
     chart.data = [{
       "Stressor": "Others",
-      "index": 4
+      "index": 4,
+      text_color: "#ffffff",
     },{
       "Stressor": "Personal Financial Situation",
-      "index": 34
+      "index": 34,
+      text_color:"#000000"
     },{
       "Stressor": "Future Uncertainty",
       "index": 40,
-      //"pulled": true
+      text_color:"#ffffff",
     },{
       "Stressor": "Heavy Workload",
-      "index": 22
+      "index": 22,
+      text_color:"#ffffff",
+      "pulled": true
     }];
 
     // This creates initial animation

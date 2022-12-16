@@ -6,6 +6,7 @@ am4core.ready(function() {
     // Themes end
 
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
     
     // Create chart instance
     var chart = am4core.create("govperformance", am4charts.XYChart);
@@ -262,6 +263,7 @@ am4core.ready(function() {
     // Create axes
     var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
     var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    valueAxis.title.text = "Value";
   
     [
       "Netvalue"

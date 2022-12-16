@@ -6,6 +6,7 @@ am4core.ready(function() {
     // Themes end
     
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
 
     var chart = am4core.create("HKMDAfactors", am4charts.XYChart);
     chart.hiddenState.properties.opacity = 0; // this creates initial fade-in

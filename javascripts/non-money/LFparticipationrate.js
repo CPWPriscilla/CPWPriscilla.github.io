@@ -6,6 +6,7 @@ am4core.ready(function() {
     // Themes end
 
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
     
     // Create chart instance
     var chart = am4core.create("LFparticipationrate", am4charts.XYChart);
@@ -174,7 +175,7 @@ am4core.ready(function() {
     // Create series
     var series = chart.series.push(new am4charts.LineSeries());
     series.dataFields.valueY = elem;
-    series.tooltipText = elem + ": [bold font-size: 20]{valueY}"
+    series.tooltipText = elem + ": [bold font-size: 20]{valueY}%"
     series.dataFields.dateX = "Year";
     series.strokeWidth = 2;
     series.minBulletDistance = 15;

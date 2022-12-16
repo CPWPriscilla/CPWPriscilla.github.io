@@ -5,10 +5,12 @@ am4core.ready(function() {
     // Themes end
     
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
     
     // Create chart instance
     var chart = am4core.create("chartdivgovbuilding", am4charts.RadarChart);
-    
+    chart.logo.disabled = true;
+
     // Add data
     chart.data = [ {
       "category": "Other SSFs",

@@ -22,8 +22,9 @@
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="stylesheets/styles.css" rel="stylesheet" />
-        <script src="https://www.amcharts.com/lib/4/core.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css"/>
         <!--can put in body part too-->
+        <script src="https://www.amcharts.com/lib/4/core.js"></script>
         <script src="https://www.amcharts.com/lib/4/charts.js"></script>
         <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
         <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
@@ -71,11 +72,11 @@
             <span class="fas fa-bars"></span>
         </div>
         <ul>
-            <a href="#situation"><li>Fertility Rate in HK</li></a>
-            <a href="#housing"><li>Housing Cost in Hong Kong</li></a>
-            <a href="#living"><li>Living Cost in Hong Kong</li></a>
-            <a href="#nonmoney"><li>Non-Money Cost</li></a>
-            <a href="#outsidehk"><li>Pro-Fertility Policies Around Asia</li></a>
+            <a href="#situation"><li>Local Fertility Rate</li></a>
+            <a href="#housing"><li>The Housing Cost</li></a>
+            <a href="#living"><li>Growing Financial Burdens</li></a>
+            <a href="#nonmoney"><li>Priceless Factors</li></a>
+            <a href="#outsidehk"><li>Pro-Fertility Policies</li></a>
         </ul>
     </div>
     
@@ -86,7 +87,7 @@
             <div class="container" id="body" style="align-items:center; vertical-align:middle; padding-top: 8rem; height: 100vh">
                 <div class="text-center center-heading"  style="max-width: 80rem; margin: auto; height: 100v">
                     <h2 class="masthead-heading1" valign="middle" style="position:relative;">
-                        The Lowest Birth Rate - <br>Costs Of Birth Giving In Hong Kong Discourage Couples In Absence Of Pro-Fertility Measures
+                        “It’s Like An Abyss”: <br>Demanding Childbearing Costs Discourage Local Couples in Absence of Pro-Fertility Measures
                     </h2>
                     <div class="masthead-text" style="font-size: 18px; color: gray" style="position:relative;">By Cheung Pui Wu</div>
                     <h4 class="section2text1" valign="middle" style="position:relative;">
@@ -94,7 +95,7 @@
                     </h4>
                 </div>
                 <div id="scroll" class="demo" style="margin-top: 7rem; position:relative;">
-                    <a href="#situation"><span></span><b>Scroll</b></a>
+                    <a href="#situation"><span></span><b>Read More</b></a>
                 </div>
                 <!--<a id="btt">Hello</a>-->
             </div>
@@ -103,12 +104,16 @@
 
         <!--Situation-->
         <section class="page-section"  valign="middle" id="situation">
-            <div class="container" valign="middle" id="body">
+            <div class="container" valign="middle">
                 <!--<div class="masthead-heading text-uppercase">Cost of Childbirth in HK</div>
                 -->
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
-                    <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
-                        Fertility Rate in Hong Kong</h2>
+                    <h4 class="section2text" valign="middle">
+                        The financial and non-money costs fanning the unwillingness of birth giving resulted to the decline of the local birth rate plus a series of social problems, and an NGO leader said the government had been “indifferent” to the issue.
+                    </h4>
+                    <h2 class="section-heading1" valign="middle" style="margin-top: 20px; margin-bottom: 20px;">
+                        Local Fertility Rate Goes Into A Tailspin
+                    </h2>
                     <!--<h4 class="section2text" valign="middle">
                         Considering the increasing future burden, the number of birth-giving keeps dropping.
                     </h4>-->
@@ -118,14 +123,14 @@
                     <h4 class="section2text" valign="middle">
                         According to statistics from the Census and Statistics Department and World Bank, the fertility rate in both Hong Kong and the whole world keeps hitting record lows. The local total fertility rate even dived to the latest 0.77 from 1.06 in 2019 and hence continuously lead to a dead cross population.
                     </h4>
-                    <h4 class="section2text" valign="middle" style="margin-bottom: 1rem;">
+                    <h4 class="section2text" valign="middle">
                         The rate of at least one child per woman had been steady before the recent steepest fall after 2019 that made Hong Kong fall far behind the level of maintaining population size.
                     </h4>
-                    <h4 class="section2text" valign="middle" style="margin-bottom: 1rem;">
+                    <h4 class="section2text" valign="middle" style="margin-bottom: 10px;">
                         Winning South Korea by merely 0.03, Hong Kong was the second place for World’s Lowest Fertility Rate in 2020, but the latest census one year afterwards showed that the local number was 0.04 less than South Korea, that Hong Kong may take over the first place.
                     </h4>
                 </div>
-                <div class="row">
+                <div class="row" style="margin-bottom:20px">
                     <div class="col-lg-9 col-12 col-md-12" id="birthrate1" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
                     <table class="styled-table col-lg-3 col-md-10 reveal" style="margin-right:auto; margin-left:auto">
                         <caption class="text-uppercase"><b>The Lowest Fertility Rate Among the World in 2020</b></caption>
@@ -139,53 +144,56 @@
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>South Korea</td>
+                                <td style="text-align:left;"><span class="fi fi-kr"></span> South Korea</td>
                                 <td>0.83</td>
                             </tr>
                             <tr class="active-row">
                                 <td>2</td>
-                                <td>Hong Kong</td>
+                                <td style="text-align:left;"><span class="fi fi-hk"></span> Hong Kong</td>
                                 <td>0.88</td>
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td>Puerto Rico</td>
+                                <td style="text-align:left;"><span class="fi fi-pr"></span> Puerto Rico</td>
                                 <td>0.90</td>
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td>Singapore</td>
+                                <td style="text-align:left;"><span class="fi fi-sg"></span> Singapore</td>
                                 <td>1.10</td>
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td>Malta</td>
+                                <td style="text-align:left;"><span class="fi fi-mt"></span> Malta</td>
                                 <td>1.13</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <h3 class="reftext" style="margin-top:30px">Source: HKSAR, 2021; World Bank, 2020</h3>
+                <h3 class="reftext" style="margin-bottom:40px">Source: HKSAR, 2021; World Bank, 2020</h3>
             
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
-                    <h2 class="section2text" valign="middle" style="margin-top: 60px; margin-bottom: 20px;">
+                    <h4 class="section2text" valign="middle">
+                        The low fertility rate is not isolated from other issues, labour insufficiency may happen in the long run, but the most instant consequence people can observe is the operational difficulties of kindergartens.
+                    </h4>
+                    <h2 class="section2text" valign="middle" style="margin-bottom: 20px;">
                         <b><i>The Trough Of Hong Kong Kindergarten</i></b></h2>
                     <h4 class="section2text" valign="middle">
-                        Affected by the declining newborn and enrolment number, 19 kindergartens have already reported their closure to the Education Bureau from September 2021 to August 2022 and at least one in 10 kindergartens will possibly shut down in the coming three years, a survey has found.
+                        Affected by the declining newborn and enrolment number, 19 kindergartens have already reported their closure to the Education Bureau from September 2021 to August 2022 and at least one in 10 kindergartens will possibly shut down in the coming three years, a survey answered by 235 school representatives, has found.
                     </h4>
-                    <h4 class="section2text" valign="middle">
+                    <h4 class="section2text" valign="middle" style="margin-bottom: 20px;">
                         According to the Hong Kong Federation of Education Workers, about 70 per cent of the kindergartens said the enrolment number this year decreased which fuelled the financial pressure amid the pandemic and emigration wave.
                     </h4>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4 col-md-12" id="chartdivgthd" valign="middle"  style="height:400px; margin:auto"></div>
-                    <div class="col-lg-4 col-md-12" id="chartdivgtwd" valign="middle"  style="height:400px; margin:auto"></div>
-                    <div class="col-lg-4 col-md-12" id="chartdivgtcl" valign="middle"  style="height:400px; margin:auto"></div>
+                <div class="row reveal">
+                    <div class="col-lg-4 col-md-12" id="chartdivgthd" valign="middle"  style="height:450px; margin:auto"></div>
+                    <div class="col-lg-4 col-md-12" id="chartdivgtfd" valign="middle"  style="height:450px; margin:auto"></div>
+                    <div class="col-lg-4 col-md-12" id="chartdivgtcl" valign="middle"  style="height:450px; margin:auto"></div>
                 </div>
-                <h3 class="reftext" style="margin-top:60px; max-width: 60rem; margin-right: auto; margin-left: auto; margin-bottom: 0px; text-align:left">
+                <h3 class="reftext" style="margin-top:40px; max-width: 60rem; margin-right: auto; margin-left: auto; margin-bottom: 0px; text-align:left">
                     Each Half-day or Whole-day Kindergarten lost an average of 16 and nine K1 students this year respectively, figures responded by 235 kindergartens told.
                 </h3>
-                <h3 class="reftext">
+                <h3 class="reftext" style="margin-bottom: 40px;">
                     Source: Hong Kong Federation of Education Workers, 2022
                 </h3>
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
@@ -199,36 +207,78 @@
                         Multiple factors were usually considered before affirming the decision to be pregnant, but the above survey, which interviewed 1275 people, found 86.7 per cent of respondents agreed that the housing issue was currently the most influential major reason, and such reason had occupied one of the top three disincentives for years. Followed by time plus energy insufficiency and the financial burden of child-rearing, these two factors were discouraging for about 85.1 and 84.7 per cent of respondents.
                     </h4>
                 </div>
-                <div id="HKMDAfactors" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
-                <h3 class="reftext" style="margin-top:30px">Source: Hong Kong Women Development Association, 2022</h3>
+                <div id="HKMDAfactors" valign="middle"  style="height:600px; margin:auto"></div>
+                <h3 class="reftext">Source: Hong Kong Women Development Association, 2022</h3>
             </div>
         </section>
 
         <!--Housing-->
         <section class="page-section"  valign="middle" id="housing" style="background-color:#f7f7f7;">
-            <div class="container" valign="middle" id="body">
+            <div class="container" valign="middle">
                 <!--<div class="masthead-heading text-uppercase">Cost of Childbirth in HK</div>
                 -->
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
                     <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
-                        Housing Cost in Hong Kong
+                        The Housing Cost<br>Is “Severely Unaffordable”
                     </h2>
                         <h4 class="section2text" valign="middle">
                             For most Hongkongers, the decision on whether to give birth was probably based on the premise of living space sufficiency, while the dense population and land scarcity eroded the willingness to be pregnant.
                         </h4>
                         <h4 class="section2text" valign="middle">
                             Hong Kong, a piece of 1113.76 km2 of land which is crowded with more than seven million people, has been the most unaffordable housing market for 12 years, Demographia, a journal internet site from the US, said.
-                            <div class="portfolio-item" style="display: inline-block;">
+                            <!-- <div class="portfolio-item" style="display: inline-block;">
                                 <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1" style="color: #df4e71;">
                                     <div class="portfolio-hover">
                                         <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x" style="font-size: 2rem;"></i></div>
                                     </div>
                                 </a>
-                            </div>
+                            </div> -->
                         </h4>
                         <h4 class="section2text" valign="middle">
                             According to the International Housing Affordability Study, a home in Hong Kong was severely unaffordable and it averagely took about 23 years for a household who did not spend any part of his/her income to purchase a unit.
                         </h4>
+                </div>
+                <div class="row reveal" style="margin-top:20px; margin-bottom:40px; margin-left:auto;">
+                    <table class="col-lg-5 styled-table" style="margin-right:auto; margin-left:auto; max-width:450px;">
+                        <caption class="text-uppercase" style="text-align: center;"><b>The Least Affortable Housing Market</b></caption>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Market</th>
+                                <th>Median Multiple</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="active-row">
+                                <td>1</td>
+                                <td style="text-align:left;"><span class="fi fi-hk"></span> Hong Kong</td>
+                                <td>23.2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td style="text-align:left;"><span class="fi fi-au"></span> Sydney</td>
+                                <td>15.3</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td style="text-align:left;"><span class="fi fi-ca"></span> Vancouver</td>
+                                <td>13.3</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td style="text-align:left;"><span class="fi fi-us"></span> San Jose</td>
+                                <td>12.6</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td style="text-align:left;"><span class="fi fi-au"></span> Melbourne</td>
+                                <td>12.1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                     <h3 class="reftext" style="position: relative;">Source: International Housing Affordability, Demographia, 2022</h3>
+                </div>
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
                         <h4 class="section2text" valign="middle">
                             There are two options for most Hongkongers to purchase homes: with or without financial support from their parents, but the latter one is nearly impossible due to the imbalance between income and housing price, the vice-chairwoman explained.
                         </h4>
@@ -239,7 +289,7 @@
                             Housing Shortage was the top priority of the latest policy address that the current Chief Executive John Lee Ka-chiu announced the ‘Light Public Housing Scheme’ to shorten the waiting time for public housing which currently took 5.6 years on average.
                         </h4>
                         <h4 class="section2text" valign="middle">
-                            Centa-City Index (CCL), a local property price indicator, showed that the price has generally lifted after SARS in 2003 with small fluctuations and broke the base index 100 of 1997 in March 2012.
+                            Centa-City Leading Index (CCL), a local property price indicator, showed that the price has generally lifted after SARS in 2003 with small fluctuations and broke the base index 100 of 1997 in March 2012.
                         </h4>
                         <h4 class="section2text" valign="middle">
                             The total fertility rate in Hong Kong then started to drop to 1.13 in 2013 from 1.29 children per woman in 2012, the year of the dragon when people tend to give birth in due to traditional thinking.
@@ -247,7 +297,7 @@
                         <h4 class="section2text" valign="middle">
                             The childbirth situation improved to more than 1.2 in 2014 and 2016 when the brief recessions of the property market took place in despite the overall rising trend of CCL.
                         </h4>
-                        <h4 class="section2text" valign="middle">
+                        <h4 class="section2text" valign="middle" style="margin-bottom: 20px">
                             However, an economic downturn may also take place since the property market is not isolated from the whole economy, and Au Yeung said this situation will be miserable, especially for the grassroots.
                         </h4>
                 </div>
@@ -256,11 +306,11 @@
                     <div class="col-lg-10" id="chartdivccl" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
                     <h3 class="reftext">Source: Centaline Property</h3>
                     <div class="col-lg-10" id="birthrate2" valign="middle"  style="height:600px; margin-right: auto; margin-left: auto;"></div>
-                    <h3 class="reftext" style="margin-bottom: 5rem;">Source: Census and Statistics Department</h3>
+                    <h3 class="reftext" style="margin-bottom: 40px;">Source: Census and Statistics Department</h3>
                 </div>
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
-                    <h4 class="section2text" valign="middle" style="margin-bottom: 2rem;">
+                    <h4 class="section2text" valign="middle">
                         The cliché of “the more you pay, the more you will gain” did not apply well to the housing situation in Hong Kong. CCL jumped by more than 40 from 2016 to 2021 with an increase of only one square meter in the overall floor area of an accommodation per person, according to the 2021 Population Census.
                     </h4>
                     <h4 class="section2text" valign="middle">
@@ -284,38 +334,46 @@
                     <h4 class="section2text" valign="middle">
                         The reality fell behind the estimated completions for private property, the number of actual completed units has reached the forecast three times only since 2011. The difference has accumulated to an amount of 18,996 units, 700 units more than the estimated completion in 2021, the report from the Rating and Valuation Department showed.
                     </h4>
-                    <h4 class="section2text" valign="middle">
+                    <h4 class="section2text" valign="middle" style="margin-bottom: 20px">
                         Looking into the latest government five-year plan, according to the latest annual report of Hong Kong Housing Authority, the progress achieved only 11.8 per cent and less than one in 10 Public Rental Housing/ Green Form Subsidised Home Ownership Scheme (PRH/GSH) units was completed in the first year.
                     </h4>
 
                 </div>
                 <div class="row">
-                    <div class="col-lg-6" id="chartdivcompletions" valign="middle"  style="height:600px; margin:auto"></div>
-                    <div class="col-lg-6" id="chartdivgovbuilding" valign="middle"  style="height:600px; margin:auto"></div>
+                    <div class="col-lg-6">
+                        <div id="chartdivcompletions" valign="middle"  style="height:600px; margin:auto;"></div>
+                        <span class="reftext" style= "text-align:left; font-size:12px">
+                            *The actual completions in 2021 and 2022 have not yet be released.
+                        </span>
+                    </div>
+                    <div class="col-lg-6" style="text-align: right; line-height: 16px;">
+                        <div id="chartdivgovbuilding" valign="middle"  style="height:600px; margin:auto"></div>
+                        <span class="reftext" style="text-align:right;font-size:12px;">
+                            *PRH / GSH: Production of Public Rental Housing / Green Form Subsidised Home Ownership Scheme <br> SSFs: Subsidised Sale Flats
+                        </span>
+                    </div>
+
+                    <h3 class="reftext" style="max-width: 60rem; margin-top:20px; margin-right: auto; margin-left: auto; text-align:left;">
+                        Source: Hong Kong Property Review, Rating and Valuation Department; Annual Report 2022/21, Hong Kong Housing Authority
+                    </h3>
+
                 </div>
-                <h3 class="reftext" style="margin-top:10px; max-width: 60rem; margin-right: 0; margin-left: auto; text-align:right; font-size:12px">
-                    *PRH / GSH: Production of Public Rental Housing / Green Form Subsidised Home Ownership Scheme <br> SSFs: Subsidised Sale Flatss
-                </h3>
-                <h3 class="reftext" style="margin-top:50px; max-width: 60rem; margin-right: auto; margin-left: auto; text-align:left;">
-                    Source: Hong Kong Property Review, Rating and Valuation Department; Annual Report 2022/21, Hong Kong Housing Authority
-                
-                </h3>
             </div>
         </section>
 
         <!--Living-->
         <section class="page-section"  valign="middle" id="living">
-            <div class="container" valign="middle" id="body">
+            <div class="container" valign="middle">
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
                     <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
-                        Living Cost in Hong Kong
+                        Growing Financial Burdens<br>Are Brought By Unstoppable Inflation
                     </h2>
                     <h4 class="section2text" valign="middle">
-                        Apart from housing cost, baby rearing cost was another challenging obstacle for Hongkongers. There was a concept among Hong Kong people that raising a single child would cost at least four million dollars and the number was only a vague expression of telling how expensive it is to bring up a new life here.
+                        Apart from housing cost, baby rearing cost was another challenging obstacle for Hongkongers. There was a myth among Hong Kong people that raising a single child would cost at least four million dollars and the number was only a vague expression of telling how expensive it is to bring up a new life here.
                     </h4>
                     <h4 class="section2text" valign="middle">
-                        Hang Seng Bank, which promoted this concept through advertisement in 2006, released the latest finding after 16 years that parents need to spend a half more - about six million dollars on each child until his/her economic independence.
+                        Hang Seng Bank, which promoted this number through advertisement in 2006, released the latest finding after 16 years that parents need to spend a half more - about six million dollars on each child until his/her economic independence.
                     </h4>
                     <h4 class="section2text" valign="middle">
                         Still, the housing cost, which can be a considerable expense for married couples, did not count in the above estimation.
@@ -326,31 +384,6 @@
                     </h4>
                 </div>
 
-                <!-- <div class="count_wrapper reveal" id="counterrow" style="margin-bottom: 4rem;">
-                    <div class="count_container">
-                        <i class="fa-solid fa-mug-hot"></i>
-                        <span class="count_value" data-val="166666">000000</span>
-                        <span class="count_text">Starbucks Latte (Tall)</span>
-                    </div>
-                
-                    <div class="count_container"> 
-                        <i class="fa-solid fa-mobile-button"></i>
-                        <span class="count_value" data-val="779">0000</span>
-                        <span class="count_text">iPhone 14 (128GB)</span>
-                    </div>
-            
-                    <div class="count_container">
-                        <i class="fa-solid fa-car"></i>
-                        <span class="count_value" data-val="11">00</span>
-                        <span class="count_text">Tesla Model Y</span>
-                    </div>
-            
-                    <div class="count_container">
-                        <i class="fa-solid fa-building"></i>
-                        <span class="count_value" data-val="1">0</span>
-                        <span class="count_text">Novoland 2-Rooms Unit</span>
-                    </div>
-                </div> -->
                 <div class="count_wrapper reveal"style="margin-bottom: 4rem;">
                     <div class="count_container">
                         <i class="fa-solid fa-mug-hot"></i>
@@ -411,7 +444,7 @@
                 </div>
                     <div class="row">
                         <div class="col-lg-12" id="chartdivcpi" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
-                        <h3 class="reftext">Source: Census and Statistics Department</h3>
+                        <h3 class="reftext" style="margin-bottom:40px">Source: Census and Statistics Department</h3>
                     </div>
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
                     <h4 class="section2text" valign="middle">
@@ -460,7 +493,7 @@
 
                 <div class="row">
                     <div class="col-lg-12" id="chartdivcpiue" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
-                    <h3 class="reftext">Source: Census and Statistics Department</h3>
+                    <h3 class="reftext" style="margin-bottom: 40px">Source: Census and Statistics Department</h3>
                 </div>
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
@@ -478,11 +511,11 @@
 
         <!--Non-Money-->
         <section class="page-section"  valign="middle" id="nonmoney" style="background-color:#f7f7f7;">
-            <div class="container" valign="middle" id="body">
+            <div class="container" valign="middle">
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
                     <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
-                        Non-Money Cost
+                        Priceless Factors<br>Beyond The Six Million Dollars Matters
                     </h2>
                     <h4 class="section2text" valign="middle">
                         Marriage and childbearing for most of the women in Hong Kong were postponed until their 30s with an average of two years gap between the two big events, figures from Census and Statistics Department showed.
@@ -493,7 +526,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12" id="1stmarchild" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
-                    <h3 class="reftext">Source: Census and Statistics Department</h3>
+                    <h3 class="reftext" style="margin-bottom: 40px">Source: Census and Statistics Department</h3>
                 </div>
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
@@ -513,7 +546,7 @@
                     <h3 class="reftext" style="max-width: 60rem; margin-right: auto; margin-left: auto; margin-bottom: 0px;text-align:left;">
                         The participation in the labour market of early thirties females climbed to almost 80 per cent from 72.6 per cent in 2001.
                     </h3>
-                    <h3 class="reftext">
+                    <h3 class="reftext" style="margin-bottom: 40px">
                         Source: Census and Statistics Department
                     </h3>
                 </div>
@@ -537,14 +570,18 @@
                 </div>
 
                 <div class="row reveal">
-                    <div class="col-lg-12 section2text" valign="middle" style="margin: auto; text-align:center; font-family: 'Montserrat'; color: #6c757d; font-weight: 600; font-size: 20px;">Ratio of Population Aged Above 15 with Academic Degree Level</div>
-                    <div class="col-lg-12" id="Fpost2nd" valign="middle"  style="float:left; height:200px; margin-right: 0px;"></div>
+                    <div class="col-lg-12 section2text" valign="middle" style="margin: auto; text-align:center; font-family: 'Montserrat'; color: #6c757d; font-weight: 600; font-size: 20px;">
+                        Sex Ratio of Population Aged Above 15 with Academic Degree Level
+                    </div>
+                    <!-- <div class="col-lg-12" id="Fpost2nd" valign="middle"  style="float:left; height:200px; margin-right: 0px;"></div> -->
                 </div>
-                <div class="row reveal">
+                <div class="row reveal" style="margin-top: 30px">
                     <div class="col-lg-4" id="11Mpost2nd" valign="middle" style="float:left; height:250px; margin-top: auto; margin-bottom: auto; margin-right: 0px;"></div>
-                    <div class="col-lg-4 section2text" valign="middle" style="margin: auto; text-align:center; font-size: 25px;">After 10 Years</div>
+                    <div class="col-lg-4 section2text" valign="middle" style="margin: auto; text-align:center; font-size: 25px;">
+                        After 10 Years
+                    </div>
                     <div class="col-lg-4" id="21Mpost2nd" valign="middle" style="float:left; height:240px; margin-top: auto; margin-bottom: auto; margin-right: 0px;"></div>
-                    <h3 class="reftext">Source: Census and Statistics Department</h3>
+                    <h3 class="reftext" style="margin-bottom: 40px">Source: Census and Statistics Department</h3>
                     
                 </div>
 
@@ -555,8 +592,8 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-12" id="postedusexage" valign="middle" loading="lazy" style="height:400px; padding-right: 80px; padding-top: 30px; margin:auto"></div>
-                    <h3 class="reftext">Source: Census and Statistics Department</h3>
+                    <div class="col-lg-12" id="postedusexage" valign="middle" loading="lazy" style="height:400px; padding-right: 80px; margin:auto"></div>
+                    <h3 class="reftext" style="margin-bottom: 40px">Source: Census and Statistics Department</h3>
                 </div>
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
@@ -581,7 +618,7 @@
                     </h4>
                 </div>
 
-                <div class="row" style="margin-bottom: 50px">
+                <div class="row" style="margin-bottom: 40px">
                     <div class="col-lg-6 col-12 col-md-12" id="stressor" valign="middle"  style="height:600px; padding-right: 80px;"></div>
                 
                     <div class="panel-group col-lg-6 reveal" id="accordion">
@@ -605,7 +642,7 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Oslo</td>
+                                        <td style="text-align:left;"><span class="fi fi-no"></span> Oslo</td>
                                         <td>100</td>
                                     </tr>
                                     <tr>
@@ -615,12 +652,12 @@
                                     </tr>
                                     <tr>
                                         <td>92</td>
-                                        <td>Memphis</td>
+                                        <td style="text-align:left;"><span class="fi fi-us"></span> Memphis</td>
                                         <td>77.12</td>
                                     </tr>
                                     <tr class="active-row">
                                         <td>93</td>
-                                        <td>Hong Kong</td>
+                                        <td style="text-align:left;"><span class="fi fi-hk"></span> Hong Kong</td>
                                         <td>77.11</td>
                                     </tr>
                                     <tr>
@@ -630,11 +667,11 @@
                                     </tr>
                                     <tr>
                                         <td>100</td>
-                                        <td>Cape Town</td>
+                                        <td style="text-align:left;"><span class="fi fi-za"></span> Cape Town</td>
                                         <td>50</td>
                                     </tr>
                                 </tbody>
-                                <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Table source: Cities with the Best Work-Life Balance, Kisi, 2022</caption>
+                                <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Source: Cities with the Best Work-Life Balance, Kisi, 2022</caption>
                             </table>
                             </div>
                           </div>
@@ -659,27 +696,27 @@
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Dubai</td>
+                                            <td style="text-align:left"><span class="fi fi-ae"></span> Dubai</td>
                                             <td>23.4%</td>
                                         </tr>
                                         <tr class="active-row">
                                             <td>2</td>
-                                            <td>Hong Kong</td>
+                                            <td style="text-align:left"><span class="fi fi-hk"></span> Hong Kong</td>
                                             <td>17.9%</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Kuala Lumpur</td>
+                                            <td style="text-align:left"><span class="fi fi-my"></span> Kuala Lumpur</td>
                                             <td>17.1%</td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
-                                            <td>Singapore</td>
+                                            <td style="text-align:left"><span class="fi fi-sg"></span> Singapore</td>
                                             <td>16.9%</td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
-                                            <td>Montevideo</td>
+                                            <td style="text-align:left"><span class="fi fi-uy"></span> Montevideo</td>
                                             <td>16.3%</td>
                                         </tr>
                                         <tr>
@@ -689,11 +726,11 @@
                                         </tr>
                                         <tr>
                                             <td>100</td>
-                                            <td>Amsterdam</td>
+                                            <td style="text-align:left"><span class="fi fi-nl"></span> Amsterdam</td>
                                             <td>8.6%</td>
                                         </tr>
                                     </tbody>
-                                    <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Table source: Cities with the Best Work-Life Balance, Kisi, 2022</caption>
+                                    <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Source: Cities with the Best Work-Life Balance, Kisi, 2022</caption>
                                     </table>
                                 </div>
                             </div>
@@ -724,26 +761,26 @@
                                         </tr>
                                         <tr>
                                             <td>1</td>
-                                            <td>India</td>
+                                            <td style="text-align:left"><span class="fi fi-in"></span> India</td>
                                             <td>72.1 (-1.5)</td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
-                                            <td>Mainland China</td>
+                                            <td style="text-align:left"><span class="fi fi-cn"></span> Mainland China</td>
                                             <td>66.6 (+0.5)</td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
-                                            <td>Singapore</td>
+                                            <td style="text-align:left"><span class="fi fi-sg"></span> Singapore</td>
                                             <td>59.8 (+0.6)</td>
                                         </tr>
                                         <tr class="active-row">
                                             <td>4</td>
-                                            <td>Hong Kong</td>
+                                            <td style="text-align:left"><span class="fi fi-hk"></span> Hong Kong</td>
                                             <td>56.1 (-0.6)</td>
                                         </tr>
                                     </tbody>
-                                    <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Table source: 360 Global Well-Being Survey, Cigna, 2022</caption>
+                                    <caption class="reftext" style="margin-top:30px; position: relative; caption-side:bottom">Source: 360 Global Well-Being Survey, Cigna, 2022</caption>
                                 </table>
                             </div>
                         </div>
@@ -833,7 +870,7 @@
                 
                 <div class="row">
                     <div class="col-lg-12" id="govperformance" valign="middle"  style="height:600px; padding-right: 80px; margin:auto"></div>
-                    <h3 class="reftext">Source: Hong Kong Public Opinion Research Institute</h3>
+                    <h3 class="reftext" style="margin-bottom: 40px">Source: Hong Kong Public Opinion Research Institute</h3>
                 </div>
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
@@ -889,11 +926,11 @@
 
         <!--Outside HK-->
         <section class="page-section"  valign="middle" id="outsidehk">
-            <div class="container" valign="middle" id="body">
+            <div class="container" valign="middle">
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
                     <h2 class="section-heading1" valign="middle" style="margin-top: 10px; margin-bottom: 20px;">
-                        Pro-Fertility Policies Around Asia
+                        Pro-Fertility Policies<br>Are Still Wishes in Hong Kong
                     </h2>
                     <h4 class="section2text" valign="middle">
                         Voices urging the government to improve or amend pro-natalist policies over the past years. According to the Findings on Family Planning Knowledge, Attitude and Practice in Hong Kong Survey 2017 from FPAHK, about half of the survey participants thought financial support, relative workplace arrangements and increases in child care services were helpful in encouraging fertility willingness. In particular, educational and housing subsidies, picked by 56.6 and 55.3 per cent of respondents, were the top two measures five years ago.
@@ -906,7 +943,7 @@
                 <div class="row">
                     <div class="col-lg-6" id="hkwdapolicy" valign="middle" loading="lazy" style="height:500px;"></div>
                     <div class="col-lg-6" id="fpahkpolicy" valign="middle" loading="lazy" style="height:500px;"></div>
-                    <h3 class="reftext" style="padding-top: 30px">Source: HKWDA (2022); FPAHK (2017)</h3>
+                    <h3 class="reftext" style="margin-bottom: 40px;">Source: HKWDA (2022); FPAHK (2017)</h3>
                 </div>
 
                 <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
@@ -923,7 +960,7 @@
                         “Exaggeratedly speaking, if people are awarded a unit after marriage, everyone will go for it, they will be keen on getting married even without happiness, even without an ideal partner,” he said on RTHK City Forum last year. “If the family is not happy, the children will only be harmful to society, there will be an additional burden in society.”
                     </h4>
                     <h4 class="section2text" valign="middle">
-                        Agreeing on providing more practical encouragement, Au Yeung stressed that Hong Kong has been behind others in terms of related assistance and the point was never on the amount, but the “sincerity” of the government in supporting local couples should matter.
+                        Agreeing on providing more practical encouragement, Au Yeung stressed that Hong Kong had been behind others in terms of related assistance and the point was never on the amount, but the “sincerity” of the government in supporting local couples should matter.
                     </h4>
                     <h4 class="section2text" valign="middle">
                         HKWDA also suggested different measures to the government after every review, for example, five-day work weeks or flexible working hours, and child care service enhancement, but responses from authorities were not good and Au Yeung described that officials would usually brush over their suggestions.
@@ -932,7 +969,10 @@
                         The shortage of child care facilities reached an alarming stage that raised officials’ attention especially when the child abuse scandal at Children’s Residential Homes was revealed this year. There will be a new resident child care centre established and the Secretary for Labour and Welfare Law Chi-kwong invites more operators to take part in related services in hopes of tackling the excess demand.
                     </h4>
                     <h4 class="section2text" valign="middle">
-                        Compared with similar Asian regions/countries nearby, Hong Kong has the shortest paternity leave and is the only place where no cash bonus can be found. At least one baby per female was recorded in Singapore which is regarded as a keen competitor of Hong Kong and famous for her generous pro-natalist policies. But the number was less than one in Taiwan and South Korea, another two places that introduced certain policies.
+                        However, even Law admitted the local birth rate might be the lowest in the world, he highlighted in one of his blog articles in 2018 that the government had never intended to encourage fertility through policies ever since the direction set in 2003.
+                    </h4>
+                    <h4 class="section2text" valign="middle">
+                        Compared with similar Asian regions/countries nearby, Hong Kong has the shortest paternity leave and is the only place where no cash bonus can be found. At least one baby per female was recorded in Singapore which is regarded as a keen competitor of Hong Kong and famous for her generous pro-natalist policies. But the number was less than one in Taiwan and South Korea, another two places that introduced certain related policies.
                     </h4>
                 </div>
 
@@ -1083,7 +1123,7 @@
                 <h3 class="reftext" style="margin-top:10px; max-width: 60rem; margin-left: 0; margin-right: auto; text-align:left; font-size:12px">
                     Source: Official Government Data; World Population Prospects, United Nations, 2022
                 </h3>
-                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin: auto;">
+                <div class="text-center center-heading reveal"  style="max-width: 60rem; margin-right: auto; margin-left: auto; margin-top: 40px;">
                     <h4 class="section2text" valign="middle">
                         The latest comprehensive review of Population Policy was traced back to seven years ago when Carrie Lam Cheng Yuet-ngor was still the Chief Secretary for Administration.
                     </h4>
@@ -1142,7 +1182,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <table class="styled-table" style="margin-right:auto; margin-left:auto; width: 350px;">
-                                <caption class="text-uppercase"><b>The Least Affortable Housing Market</b></caption>
+                                <caption class="text-uppercase"><b>The Least Affordable Housing Market</b></caption>
                                 <thead>
                                     <tr>
                                         <th>Rank</th>
@@ -1153,27 +1193,27 @@
                                 <tbody>
                                     <tr class="active-row">
                                         <td>1</td>
-                                        <td>Hong Kong</td>
+                                        <td style="text-align:left;"><span class="fi fi-hk"></span> Hong Kong</td>
                                         <td>23.2</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Sydney</td>
+                                        <td style="text-align:left;"><span class="fi fi-au"></span> Sydney</td>
                                         <td>15.3</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Vancouver</td>
+                                        <td style="text-align:left;"><span class="fi fi-ca"></span> Vancouver</td>
                                         <td>13.3</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td>San Jose</td>
+                                        <td style="text-align:left;"><span class="fi fi-us"></span> San Jose</td>
                                         <td>12.6</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
-                                        <td>Melbourne</td>
+                                        <td style="text-align:left;"><span class="fi fi-au"></span> Melbourne</td>
                                         <td>12.1</td>
                                     </tr>
                                 </tbody>
@@ -1181,7 +1221,7 @@
                             <div class="col-lg-8">
                                 <div class="modal-body">
                                     <!-- Project details-->
-                                    <h3 class="reftext" style="margin-top:30px; position: relative;">Table source: International Housing Affordability, Demographia, 2022</h3>
+                                    <h3 class="reftext" style="margin-top:30px; position: relative;">Source: International Housing Affordability, Demographia, 2022</h3>
                                     <p></p>
                                 </div>
                             </div>
@@ -1201,7 +1241,7 @@
         <!--Situation JS-->
         <script src="javascripts/situation/birthrate1.js"></script>
         <script src="javascripts/situation/kindergarten(HD).js"></script>
-        <script src="javascripts/situation/kindergarten(WD).js"></script>
+        <script src="javascripts/situation/kindergarten(FD).js"></script>
         <script src="javascripts/situation/kindergarten(PS).js"></script>
         <script src="javascripts/situation/kindergarten(CL).js"></script>
         <script src="javascripts/situation/HKMDAfactors.js"></script>

@@ -7,6 +7,7 @@ am4core.ready(function() {
     // Themes end
     
     am4core.options.onlyShowOnViewport = false;
+    am4core.options.queue = false;
 
     var iconPath = `M1410 5456 c-217 -47 -364 -252 -331 -463 21 -135 107 -250 233 -312
     135 -67 315 -51 439 38 162 116 217 326 134 509 -31 68 -124 161 -195 194 -55

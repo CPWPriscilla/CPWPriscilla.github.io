@@ -12,7 +12,7 @@ am4core.ready(function() {
     chart.hiddenState.properties.opacity = 0; // this makes initial fade in effect
     chart.logo.disabled = true;
     chart.paddingLeft = 0;
-    chart.tooltipText = "Male: [bold font-size: 20]0.983"
+    chart.tooltipText = "[bold font-size: 20]0.983 [/][font-size: 12] Males per Female"
     chart.showTooltipOn = "always";
     chart.tooltip.getFillFromObject = false;
     chart.tooltip.background.fill = "#0f3460";

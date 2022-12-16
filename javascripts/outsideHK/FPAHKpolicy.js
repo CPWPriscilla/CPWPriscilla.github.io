@@ -8,6 +8,7 @@ am4core.ready(function() {
   // Themes end
 
   am4core.options.onlyShowOnViewport = true;
+  am4core.options.queue = false;
   
   // Create chart instance
   var chart = am4core.create("fpahkpolicy", am4charts.XYChart);
@@ -65,7 +66,7 @@ am4core.ready(function() {
   series.sequencedInterpolation = true;
   series.dataFields.valueY = "value";
   series.dataFields.categoryX = "category";
-  series.tooltipText = "{categoryX}: [bold font-size: 20]{valueY}%";
+  series.tooltipText = "{categoryX}:\n[bold font-size: 20]{valueY}%";
   series.columns.template.strokeWidth = 0;
   
   series.tooltip.pointerOrientation = "vertical";

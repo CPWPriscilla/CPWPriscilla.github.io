@@ -6,6 +6,7 @@ am4core.ready(function() {
     // Themes end
 
     am4core.options.onlyShowOnViewport = false;
+    am4core.options.queue = false;
     
     // Create chart instance
     var chart = am4core.create("chartdivgthd", am4charts.PieChart);
@@ -32,10 +33,21 @@ am4core.ready(function() {
       ];
     
     pieSeries.alignLabels = false;
-    pieSeries.labels.template.bent = true;
-    pieSeries.labels.template.radius = 3;
+    pieSeries.labels.template.bent = false;
+    pieSeries.labels.template.radius = am4core.percent(-32);
     pieSeries.labels.template.padding(0,0,0,0);
-    pieSeries.labels.template.text = "{category}";
+    pieSeries.labels.template.text = "{category}:\n[bold font-size: 20]{value.percent}%";
+    pieSeries.labels.template.propertyFields.fill = "text_color";
+    pieSeries.labels.template.textAlign = 'middle';
+
+    pieSeries.labels.template.adapter.add("radius", function(radius, target) {
+      if (target.dataItem.values.value.percent < 10) {
+        target.fill = am4core.color("#000");
+        return 2;
+      }
+      return radius;
+    });
+    
 
     pieSeries.slices.template.tooltipText = "{category}:\n[bold font-size: 20]{value.percent}%";
 
@@ -65,27 +77,32 @@ am4core.ready(function() {
     //chart.legend = new am4charts.Legend();
 
     var title = chart.titles.create();
-    title.text = "Half-day";
+    title.text = "Change of Application Number\nin Half-day Classes";
     title.align = "center"
     title.fill = '#6c757d'
     title.fontWeight = 600;
     title.fontSize = 20;
     title.marginTop = 10;
-    title.marginBottom = 0;
+    title.marginBottom = 20;
+    title.textAlign = 'middle';
     
     chart.data = [{
       "Change": "Increased",
-      "litres": 3
+      "litres": 3,
+      text_color: "#ffffff",
     },{
       "Change": "Decreased",
       "litres": 68,
+      text_color: "#000000",
       //"pulled": true
     },{
       "Change": "Unchanged",
-      "litres": 11
+      "litres": 11,
+      text_color: "#ffffff",
     },{
       "Change": "N/A",
-      "litres": 18
+      "litres": 18,
+      text_color: "#000000",
     }];
 
     // This creates initial animation

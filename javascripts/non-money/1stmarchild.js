@@ -6,6 +6,7 @@ am4core.ready(function() {
     // Themes end
 
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
     
     // Create chart instance
     var chart = am4core.create("1stmarchild", am4charts.XYChart);
@@ -77,6 +78,7 @@ am4core.ready(function() {
     // Create axes
     var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
     var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    valueAxis.title.text = "Age";
   
     ["Median age of females at first marriage",
     "Median age of females at first childbirth"
@@ -86,7 +88,7 @@ am4core.ready(function() {
     // Create series
     var series = chart.series.push(new am4charts.LineSeries());
     series.dataFields.valueY = elem;
-    series.tooltipText = elem + ": [bold font-size: 20]{valueY}"
+    series.tooltipText = elem + ":\n[bold font-size: 20]{valueY}[/]";
     series.dataFields.dateX = "Category";
     series.strokeWidth = 2;
     series.minBulletDistance = 15;
@@ -97,8 +99,7 @@ am4core.ready(function() {
     series.tooltip.pointerOrientation = "vertical";
     series.tooltip.label.minWidth = 40;
     series.tooltip.label.minHeight = 40;
-    series.tooltip.label.textAlign = "middle";
-    series.tooltip.label.textValign = "middle";
+    series.tooltip.label.textValign = "left";
 
     // Make bullets grow on hover
     var bullet = series.bullets.push(new am4charts.CircleBullet());
@@ -118,17 +119,17 @@ am4core.ready(function() {
 
     series.legendSettings.valueText = elem;
     
-    // Create vertical scrollbar and place it before the value axis
-    chart.scrollbarY = new am4core.Scrollbar();
-    chart.scrollbarY.parent = chart.leftAxesContainer;
-    chart.scrollbarY.toBack();
+    // // Create vertical scrollbar and place it before the value axis
+    // chart.scrollbarY = new am4core.Scrollbar();
+    // chart.scrollbarY.parent = chart.leftAxesContainer;
+    // chart.scrollbarY.toBack();
     
-    // Create a horizontal scrollbar with previe and place it underneath the date axis
-    //chart.scrollbarX.series.push(series);
-    //chart.scrollbarX.parent = chart.bottomAxesContainer;
-    chart.scrollbarX = new am4charts.XYChartScrollbar();
-    chart.scrollbarX = new am4core.Scrollbar();
-    chart.scrollbarX.parent = chart.bottomAxesContainer;
+    // // Create a horizontal scrollbar with previe and place it underneath the date axis
+    // //chart.scrollbarX.series.push(series);
+    // //chart.scrollbarX.parent = chart.bottomAxesContainer;
+    // chart.scrollbarX = new am4charts.XYChartScrollbar();
+    // chart.scrollbarX = new am4core.Scrollbar();
+    // chart.scrollbarX.parent = chart.bottomAxesContainer;
   
     valueAxis.cursorTooltipEnabled = false;
 

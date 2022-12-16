@@ -6,6 +6,7 @@ am4core.ready(function() {
     // Themes end
     
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
     
     // Create chart instance
     var chart = am4core.create("birthrate2", am4charts.XYChart);
@@ -142,6 +143,7 @@ am4core.ready(function() {
     // Create axes
     var dateAxis = chart.xAxes.push(new am4charts.DateAxis());
     var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    valueAxis.title.text = "Births Per Woman";
   
     ["Total Fertility Rate (Hong Kong)",
     "Total Fertility Rate (World)"
@@ -185,16 +187,16 @@ am4core.ready(function() {
     series.legendSettings.valueText = elem;
     
     // Create vertical scrollbar and place it before the value axis
-    chart.scrollbarY = new am4core.Scrollbar();
-    chart.scrollbarY.parent = chart.leftAxesContainer;
-    chart.scrollbarY.toBack();
+    // chart.scrollbarY = new am4core.Scrollbar();
+    // chart.scrollbarY.parent = chart.leftAxesContainer;
+    // chart.scrollbarY.toBack();
     
-    // Create a horizontal scrollbar with previe and place it underneath the date axis
-    //chart.scrollbarX.series.push(series);
-    //chart.scrollbarX.parent = chart.bottomAxesContainer;
-    chart.scrollbarX = new am4charts.XYChartScrollbar();
-    chart.scrollbarX = new am4core.Scrollbar();
-    chart.scrollbarX.parent = chart.bottomAxesContainer;
+    // // Create a horizontal scrollbar with previe and place it underneath the date axis
+    // //chart.scrollbarX.series.push(series);
+    // //chart.scrollbarX.parent = chart.bottomAxesContainer;
+    // chart.scrollbarX = new am4charts.XYChartScrollbar();
+    // chart.scrollbarX = new am4core.Scrollbar();
+    // chart.scrollbarX.parent = chart.bottomAxesContainer;
   
     valueAxis.cursorTooltipEnabled = false;
 

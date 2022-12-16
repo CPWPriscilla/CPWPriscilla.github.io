@@ -6,9 +6,10 @@ am4core.ready(function() {
     // Themes end
 
     am4core.options.onlyShowOnViewport = false;
+    am4core.options.queue = false;
     
     // Create chart instance
-    var chart = am4core.create("chartdivgtwd", am4charts.PieChart);
+    var chart = am4core.create("chartdivgtfd", am4charts.PieChart);
     chart.logo.disabled = true;
 
     // Add and configure Series
@@ -33,10 +34,12 @@ am4core.ready(function() {
       ];
     
     pieSeries.alignLabels = false;
-    pieSeries.labels.template.bent = true;
-    pieSeries.labels.template.radius = 3;
+    pieSeries.labels.template.bent = false;
+    pieSeries.labels.template.radius = am4core.percent(-32);
     pieSeries.labels.template.padding(0,0,0,0);
-    pieSeries.labels.template.text = "{category}";
+    pieSeries.labels.template.text = "{category}:\n[bold font-size: 20]{value.percent}%";
+    pieSeries.labels.template.propertyFields.fill = "text_color";
+    pieSeries.labels.template.textAlign = 'middle';
 
     pieSeries.slices.template.tooltipText = "{category}:\n[bold font-size: 20]{value.percent}%";
     
@@ -77,27 +80,31 @@ am4core.ready(function() {
     //chart.legend = new am4charts.Legend();
 
     var title = chart.titles.create();
-    title.text = "Whole-Day";
+    title.text = "Change of Application Number\nin Full-day Classes";
     title.align = "center"
     title.fill = '#6c757d'
     title.fontWeight = 600;
     title.fontSize = 20;
     title.marginTop = 10;
-    title.marginBottom = 0;
+    title.marginBottom = 20;
+    title.textAlign = 'middle';
     
     chart.data = [{
       "Change": "Increased",
-      "litres": 0
+      "litres": 0,
     },{
       "Change": "Decreased",
       "litres": 71,
+      text_color: "#000000",
       //"pulled": true
     },{
       "Change": "Unchanged",
-      "litres": 16
+      "litres": 16,
+      text_color: "#ffffff",
     },{
       "Change": "N/A",
-      "litres": 13
+      "litres": 13,
+      text_color: "#000000"
     }];
     
     }); // end am4core.ready()

@@ -9,6 +9,7 @@ am4core.ready(function() {
     var chart = am4core.create("chartdivccl", am4charts.XYChart);
     
     am4core.options.onlyShowOnViewport = true;
+    am4core.options.queue = false;
 
     // Add data
     chart.data = 
@@ -5987,6 +5988,7 @@ am4core.ready(function() {
     count: 1
 }
     var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    valueAxis.title.text = "Index Value";
   
     ["CCL"
     ].forEach(function (elem) {
