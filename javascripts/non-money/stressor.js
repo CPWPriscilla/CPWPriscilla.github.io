@@ -78,7 +78,7 @@ am4core.ready(function() {
     title.marginBottom = 0;
 
     var label = chart.createChild(am4core.Label);
-    label.text = "Chart source: 360 Global Well-Being Survey, Cigna, 2022";
+    label.text = "Source: 360 Global Well-Being Survey, Cigna, 2022";
     label.align = "center";
     label.fontSize = 14;
     label.fontWeight = 400;
